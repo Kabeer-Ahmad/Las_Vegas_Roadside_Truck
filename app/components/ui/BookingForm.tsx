@@ -106,7 +106,7 @@ export default function BookingForm() {
                 type="tel"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                placeholder="(803) 555-0123"
+                placeholder="(702) 555-0123"
                 required
                 className="booking-input"
               />

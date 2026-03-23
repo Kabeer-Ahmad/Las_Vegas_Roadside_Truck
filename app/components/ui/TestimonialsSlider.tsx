@@ -4,7 +4,7 @@ import { useRef, useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const AVATAR_COLORS = [
-  "#2563EB", "#059669", "#D97706", "#7C3AED", "#DC2626",
+  "#e4c13c", "#059669", "#D97706", "#7C3AED", "#DC2626",
   "#0891B2", "#4F46E5", "#EA580C", "#16A34A", "#9333EA",
   "#0D9488", "#C026D3", "#CA8A04",
 ];
@@ -176,9 +176,9 @@ export default function TestimonialsSlider({ testimonials }: { testimonials: Tes
           box-shadow: 0 2px 8px rgba(0,0,0,0.06);
         }
         .testimonials-slider-btn:hover:not(:disabled) {
-          background: #2563EB;
+          background: #e4c13c;
           color: #fff;
-          border-color: #2563EB;
+          border-color: #e4c13c;
           transform: scale(1.05);
         }
         .testimonials-slider-btn:disabled {

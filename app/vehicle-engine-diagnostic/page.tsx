@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import ServicePageTemplate from "../components/ui/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Engine Diagnostics & Repair in Columbia, SC | KM Truck & Trailer",
+  title: "Engine Diagnostics & Repair in Las Vegas, NV | Las Vegas 24 Hour Roadside Truck Services",
   description: "Advanced engine diagnostics for Cummins, Detroit Diesel, and Paccar engines. Accurate fault code reading and efficient repair.",
 };
 
 export default function Page() {
   return (
     <ServicePageTemplate
-      title="Engine Diagnostics & Repair in Columbia, SC"
+      title="Engine Diagnostics & Repair in Las Vegas, NV"
       heroSubtitle="Advanced engine diagnostics for Cummins, Detroit Diesel, and Paccar engines. Accurate fault code reading and efficient repair."
       bodyIntro="A check engine light or reduced performance can mean anything from a simple sensor fault to a complex engine issue. Our certified technicians use OEM-level diagnostic software to quickly and accurately identify the root cause."
       bodyContent="We specialize in Cummins, Detroit Diesel, and Paccar engine diagnostics and repair, including ECM reprogramming, turbocharger diagnosis, cooling system issues, and full engine overhauls."

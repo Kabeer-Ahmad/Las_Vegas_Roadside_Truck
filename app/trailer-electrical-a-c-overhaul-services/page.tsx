@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import ServicePageTemplate from "../components/ui/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Trailer Electrical & AC Overhaul Services in South Carolina | KM Truck & Trailer",
+  title: "Trailer Electrical & AC Overhaul Services in Las Vegas | Las Vegas 24 Hour Roadside Truck Services",
   description: "Complete trailer electrical overhaul, lighting, brake controller, and AC system service. DOT compliant, mobile service available.",
 };
 
 export default function Page() {
   return (
     <ServicePageTemplate
-      title="Trailer Electrical & AC Overhaul Services in South Carolina"
+      title="Trailer Electrical & AC Overhaul Services in Las Vegas"
       heroSubtitle="Complete trailer electrical overhaul, lighting, brake controller, and AC system service. DOT compliant, mobile service available."
       bodyIntro="Trailers have complex electrical systems of their own - from lighting and brake controllers to refrigeration units and liftgate power systems. Our technicians specialize in comprehensive trailer electrical diagnostics and repair."
       bodyContent="We perform complete trailer electrical overhauls including ABS wiring, lighting rewires, connector replacement, and refrigeration unit electrical service. All work is DOT-compliant and fully inspected."

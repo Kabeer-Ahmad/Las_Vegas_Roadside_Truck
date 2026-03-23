@@ -1,62 +1,9 @@
 "use client";
 
-import { useRef } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Phone, ArrowRight, CheckCircle } from "lucide-react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
-
-gsap.registerPlugin(ScrollTrigger, useGSAP);
-
-const HERO_SCROLL_LENGTH_DESKTOP = 700;
-const HERO_SCROLL_LENGTH_MOBILE = 420;
 
 export default function HeroSection() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const sectionRef = useRef<HTMLElement>(null);
-  const truckRef = useRef<HTMLDivElement>(null);
-
-  useGSAP(
-    () => {
-      const section = sectionRef.current;
-      const truck = truckRef.current;
-      if (!section || !truck) return;
-
-      const mm = gsap.matchMedia();
-      mm.add("(max-width: 768px)", () => {
-        /* Mobile: truck starts further out (right), animates left on scroll; hero size unchanged */
-        gsap.set(truck, { xPercent: 84 });
-        const tween = gsap.to(truck, { xPercent: -72, ease: "none", duration: 1 });
-        ScrollTrigger.create({
-          trigger: section,
-          start: "top top",
-          end: `+=${HERO_SCROLL_LENGTH_MOBILE}`,
-          pin: true,
-          scrub: 1,
-          anticipatePin: 1,
-          animation: tween,
-        });
-      });
-      mm.add("(min-width: 769px)", () => {
-        gsap.set(truck, { xPercent: 120 });
-        const tween = gsap.to(truck, { xPercent: -100, ease: "none", duration: 1 });
-        ScrollTrigger.create({
-          trigger: section,
-          start: "top top",
-          end: `+=${HERO_SCROLL_LENGTH_DESKTOP}`,
-          pin: true,
-          scrub: 1,
-          anticipatePin: 1,
-          animation: tween,
-        });
-      });
-      return () => mm.revert();
-    },
-    { scope: containerRef, revertOnUpdate: true }
-  );
-
   /* 3D tilt on CTA button hover */
   const handleTilt = (e: React.MouseEvent<HTMLDivElement>) => {
     const el = e.currentTarget;
@@ -77,33 +24,14 @@ export default function HeroSection() {
   ];
 
   return (
-    <div ref={containerRef} className="hero-outer" style={{ width: "100%", position: "relative", backgroundColor: "#0F172A" }}>
+    <div className="hero-outer" style={{ width: "100%", position: "relative", backgroundColor: "#141210" }}>
       <section
-        ref={sectionRef}
         className="hero-section-main"
         style={{
           position: "relative", width: "100%", height: "100svh", minHeight: "500px",
           display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden"
         }}
       >
-        {/* ── Parallax Animated Truck (above text) ── */}
-        <div className="hero-truck-wrap" style={{ position: "absolute", inset: 0, zIndex: 5 }}>
-          <div ref={truckRef} style={{
-            position: "absolute", inset: 0,
-            willChange: "transform", backfaceVisibility: "hidden",
-          }}>
-            <Image
-              src="/truck_new_hero.png"
-              alt="K&M Truck Trailer Repair - professional truck and trailer"
-              fill
-              priority
-              unoptimized
-              sizes="100vw"
-              className="hero-truck-img"
-            />
-          </div>
-        </div>
-
       {/* ── Floating particles (hidden on mobile for clean background) ── */}
       <div className="hero-particles" style={{ position: "absolute", inset: 0, zIndex: 1, pointerEvents: "none", overflow: "hidden" }}>
         {[
@@ -149,15 +77,15 @@ export default function HeroSection() {
             top: p.top, left: p.left,
             width: p.w, height: p.h,
             borderRadius: "50%",
-            background: "#60A5FA",
+            background: "#f0d56a",
             opacity: p.opacity,
             animation: `particleDrift ${p.dur} ${p.delay} ease-in-out infinite`,
           }} />
         ))}
-        {/* Glowing orbs — hidden on mobile to avoid plain blue patch that vanishes on scroll */}
+        {/* Glowing orbs — hidden on mobile */}
         {[
-          { size: 300, top: "10%", left: "60%", color: "rgba(37,99,235,0.08)", delay: "0s" },
-          { size: 200, top: "55%", left: "75%", color: "rgba(96,165,250,0.06)", delay: "3s" },
+          { size: 300, top: "10%", left: "60%", color: "rgba(228, 193, 60, 0.1)", delay: "0s" },
+          { size: 200, top: "55%", left: "75%", color: "rgba(228, 193, 60, 0.07)", delay: "3s" },
         ].map((orb, i) => (
           <div key={i} className="hero-glow-orb" style={{
             position: "absolute",
@@ -174,11 +102,11 @@ export default function HeroSection() {
       {/* ── Gradient overlay for text readability ── */}
       <div className="hero-overlay" style={{
         position: "absolute", inset: 0, zIndex: 2,
-        background: "linear-gradient(105deg, rgba(15,23,42,0.92) 0%, rgba(30,41,59,0.78) 35%, rgba(51,65,85,0.5) 58%, rgba(71,85,105,0.15) 80%, transparent 100%)"
+        background: "linear-gradient(105deg, rgba(20,18,16,0.94) 0%, rgba(38,33,28,0.82) 32%, rgba(58,50,42,0.45) 55%, rgba(85,75,58,0.12) 78%, transparent 100%)"
       }} />
       <div className="hero-overlay-bottom" style={{
         position: "absolute", inset: 0, zIndex: 2,
-        background: "linear-gradient(to top, rgba(15,23,42,0.35) 0%, transparent 35%)"
+        background: "linear-gradient(to top, rgba(20,18,16,0.5) 0%, transparent 42%)"
       }} />
 
       {/* ── Hero content (staggered animations) ── */}
@@ -188,8 +116,8 @@ export default function HeroSection() {
           {/* Badge */}
           <div className="anim-fade-up delay-1 live-dot" style={{
             display: "inline-flex", alignItems: "center", gap: "8px",
-            background: "rgba(37,99,235,0.22)", border: "1px solid rgba(37,99,235,0.45)",
-            color: "#93C5FD", fontSize: "clamp(0.65rem, 1.5vw, 0.75rem)", fontWeight: 700,
+            background: "rgba(228, 193, 60,0.22)", border: "1px solid rgba(228, 193, 60,0.45)",
+            color: "#f5e6a8", fontSize: "clamp(0.65rem, 1.5vw, 0.75rem)", fontWeight: 700,
             letterSpacing: "0.10em", textTransform: "uppercase",
             padding: "clamp(6px, 1.5vw, 8px) clamp(14px, 2vw, 18px)", borderRadius: "9999px", marginBottom: "clamp(20px, 4vw, 28px)"
           }}>
@@ -199,7 +127,7 @@ export default function HeroSection() {
               boxShadow: "0 0 8px #EF4444",
               animation: "pulse-glow 2s ease-in-out infinite"
             }} />
-            Available 24 / 7 | South Carolina
+            Available 24 / 7 | Las Vegas
           </div>
 
           {/* Headline */}
@@ -216,11 +144,11 @@ export default function HeroSection() {
 
           {/* Sub-copy */}
           <p className="anim-fade-up delay-3" style={{
-            color: "#CBD5E1", fontSize: "clamp(0.95rem, 2vw, 1.2rem)",
+            color: "#d6d0c4", fontSize: "clamp(0.95rem, 2vw, 1.2rem)",
             lineHeight: 1.75, marginBottom: "clamp(24px, 4vw, 36px)", maxWidth: "560px", marginLeft: "auto", marginRight: "auto",
             textShadow: "0 1px 8px rgba(0,0,0,0.3)"
           }}>
-            Professional roadside assistance and comprehensive fleet maintenance across Columbia, South Carolina. We minimize downtime so you can maximize delivery.
+            Professional roadside assistance and comprehensive fleet maintenance across Las Vegas and Southern Nevada. We minimize downtime so you can maximize delivery.
           </p>
 
           {/* CTAs - 3D tilt on hover */}
@@ -230,14 +158,14 @@ export default function HeroSection() {
               onMouseLeave={resetTilt}
               style={{ transition: "transform 0.2s ease", transformStyle: "preserve-3d" }}
             >
-              <a href="tel:+18033934907" style={{
+              <a href="tel:+17028632706" style={{
                 display: "inline-flex", alignItems: "center", gap: "8px",
                 background: "#DC2626", color: "#fff", padding: "clamp(12px, 2.5vw, 16px) clamp(20px, 4vw, 32px)",
                 borderRadius: "12px", fontWeight: 700, fontSize: "clamp(0.95rem, 2vw, 1.1rem)",
                 textDecoration: "none", boxShadow: "0 6px 28px rgba(220,38,38,0.4)",
                 whiteSpace: "nowrap"
               }}>
-                <Phone size={20} /> Call (803) 393-4907
+                <Phone size={20} /> Call (702) 863-2706
               </a>
             </div>
             <div
@@ -247,11 +175,11 @@ export default function HeroSection() {
             >
               <Link href="/services" style={{
                 display: "inline-flex", alignItems: "center", gap: "8px",
-                color: "#E2E8F0", padding: "clamp(12px, 2.5vw, 15px) clamp(20px, 4vw, 28px)", borderRadius: "12px",
+                color: "#ebe6dc", padding: "clamp(12px, 2.5vw, 15px) clamp(20px, 4vw, 28px)", borderRadius: "12px",
                 fontWeight: 600, fontSize: "clamp(0.9rem, 2vw, 1.05rem)",
-                border: "1.5px solid rgba(255,255,255,0.3)", textDecoration: "none",
+                border: "1.5px solid rgba(235,230,220,0.35)", textDecoration: "none",
                 whiteSpace: "nowrap", backdropFilter: "blur(4px)",
-                background: "rgba(255,255,255,0.06)"
+                background: "rgba(255,252,245,0.06)"
               }}>
                 View Services <ArrowRight size={18} />
               </Link>
@@ -263,7 +191,7 @@ export default function HeroSection() {
             {trustBadges.map((b, i) => (
               <div key={b.label} style={{
                 display: "flex", alignItems: "center", gap: "7px",
-                color: "#94A3B8", fontSize: "clamp(0.8rem, 1.5vw, 0.9rem)",
+                color: "#9c958a", fontSize: "clamp(0.8rem, 1.5vw, 0.9rem)",
                 animation: `fadeUp 0.6s ${0.6 + i * 0.1}s both ease`
               }}>
                 <CheckCircle size={16} color="#EF4444" /> {b.label}

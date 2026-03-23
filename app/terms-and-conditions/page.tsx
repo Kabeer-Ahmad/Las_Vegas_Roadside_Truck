@@ -1,9 +1,14 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { CONTACT_EMAIL } from "@/lib/site-config";
+
+const termsContactBody = CONTACT_EMAIL
+  ? `For questions about these Terms and Conditions, contact us at:\n\nLas Vegas 24 Hour Roadside Truck Services\nPhone: (702) 863-2706\nEmail: ${CONTACT_EMAIL}`
+  : `For questions about these Terms and Conditions, contact us at:\n\nLas Vegas 24 Hour Roadside Truck Services\nPhone: (702) 863-2706\n\nYou may also reach us through the Contact Us page on this website.`;
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | KM Truck & Trailer",
-  description: "Terms and Conditions for KM Truck & Trailer - the rules and guidelines governing use of our services and website.",
+  title: "Terms & Conditions | Las Vegas 24 Hour Roadside Truck Services",
+  description: "Terms and Conditions for Las Vegas 24 Hour Roadside Truck Services - the rules and guidelines governing use of our services and website.",
 };
 
 export default function TermsPage() {
@@ -26,11 +31,11 @@ export default function TermsPage() {
             {[
               {
                 title: "1. Acceptance of Terms",
-                body: "By accessing and using the KM Truck & Trailer website and services, you accept and agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use our services or website."
+                body: "By accessing and using the Las Vegas 24 Hour Roadside Truck Services website and services, you accept and agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use our services or website."
               },
               {
                 title: "2. Services",
-                body: "KM Truck & Trailer provides truck and trailer repair, maintenance, and roadside assistance services in South Carolina. The specific scope of services, pricing, and timelines are agreed upon at the time of service request.\n\nWe reserve the right to modify, suspend, or discontinue any service at any time without prior notice."
+                body: "Las Vegas 24 Hour Roadside Truck Services provides truck and trailer repair, maintenance, and roadside assistance services in Las Vegas. The specific scope of services, pricing, and timelines are agreed upon at the time of service request.\n\nWe reserve the right to modify, suspend, or discontinue any service at any time without prior notice."
               },
               {
                 title: "3. Estimates and Pricing",
@@ -46,7 +51,7 @@ export default function TermsPage() {
               },
               {
                 title: "6. Vehicle Release",
-                body: "Vehicles not picked up within 30 days after completion of service may be subject to storage fees and, if unclaimed, may be subject to lien procedures as permitted by South Carolina law."
+                body: "Vehicles not picked up within 30 days after completion of service may be subject to storage fees and, if unclaimed, may be subject to lien procedures as permitted by Nevada law."
               },
               {
                 title: "7. Website Use",
@@ -54,15 +59,15 @@ export default function TermsPage() {
               },
               {
                 title: "8. Intellectual Property",
-                body: "All content on this website, including text, graphics, logos, and images, is the property of KM Truck & Trailer and is protected by applicable copyright and trademark laws."
+                body: "All content on this website, including text, graphics, logos, and images, is the property of Las Vegas 24 Hour Roadside Truck Services and is protected by applicable copyright and trademark laws."
               },
               {
                 title: "9. Governing Law",
-                body: "These Terms shall be governed by the laws of the State of South Carolina without regard to its conflict of law provisions."
+                body: "These Terms shall be governed by the laws of the State of Nevada without regard to its conflict of law provisions."
               },
               {
                 title: "10. Contact",
-                body: "For questions about these Terms and Conditions, contact us at:\n\nKM Truck & Trailer Repair\n1278 State Rd S-20-233, Ridgeway, SC 29130\nPhone: (803) 393-4907\nEmail: repair@kmtrucktrailer.com"
+                body: termsContactBody,
               }
             ].map((section) => (
               <div key={section.title}>

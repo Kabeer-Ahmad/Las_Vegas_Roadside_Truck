@@ -248,9 +248,9 @@ export default function StackedServices({ services }: { services: Service[] }) {
               className="stats-row"
               style={{ display: "flex", gap: "16px", flexWrap: "wrap", marginBottom: "40px" }}
             >
-              <div style={{ padding: "16px 24px", background: "#EFF6FF", borderRadius: "12px", border: "1px solid #BFDBFE", flex: "1 1 auto", minWidth: "150px" }}>
-                <div style={{ fontSize: "1.5rem", fontWeight: 800, color: "#1D4ED8", marginBottom: "4px" }}>24/7</div>
-                <div style={{ fontSize: "0.85rem", color: "#3B82F6", fontWeight: 600 }}>Emergency Dispatch</div>
+              <div style={{ padding: "16px 24px", background: "#fffbf0", borderRadius: "12px", border: "1px solid #fce9a8", flex: "1 1 auto", minWidth: "150px" }}>
+                <div style={{ fontSize: "1.5rem", fontWeight: 800, color: "#c4a82f", marginBottom: "4px" }}>24/7</div>
+                <div style={{ fontSize: "0.85rem", color: "#eccb4a", fontWeight: 600 }}>Emergency Dispatch</div>
               </div>
               <div style={{ padding: "16px 24px", background: "#fff", borderRadius: "12px", border: "1px solid #E5E9EF", boxShadow: "0 4px 12px rgba(0,0,0,0.02)", flex: "1 1 auto", minWidth: "150px" }}>
                 <div style={{ fontSize: "1.5rem", fontWeight: 800, color: "#111827", marginBottom: "4px" }}>12+</div>
@@ -265,13 +265,13 @@ export default function StackedServices({ services }: { services: Service[] }) {
               display: "inline-flex",
               alignItems: "center",
               gap: "8px",
-              background: "#2563EB",
-              color: "#fff",
+              background: "#e4c13c",
+              color: "#111827",
               padding: "14px 28px",
               borderRadius: "10px",
               fontWeight: 700,
               textDecoration: "none",
-              boxShadow: "0 6px 20px rgba(37,99,235,0.25)",
+              boxShadow: "0 6px 20px rgba(228, 193, 60,0.25)",
               transition: "all 0.2s ease",
             }}
           >

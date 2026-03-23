@@ -1,10 +1,33 @@
 "use client";
 import Link from "next/link";
 import { Phone, Mail, MapPin, Clock, AlertTriangle } from "lucide-react";
-import { useState } from "react";
+import { useState, useMemo, type ReactNode } from "react";
+import { CONTACT_EMAIL } from "@/lib/site-config";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+
+  const contactRows = useMemo(() => {
+    const rows: Array<{
+      icon: ReactNode;
+      label: string;
+      value: string;
+      href?: string;
+    }> = [
+      { icon: <MapPin size={18} color="#e4c13c" />, label: "Service area", value: "Las Vegas metro & Southern Nevada — mobile service to your location." },
+      { icon: <Phone size={18} color="#e4c13c" />, label: "Call Us", value: "(702) 863-2706", href: "tel:+17028632706" },
+    ];
+    if (CONTACT_EMAIL) {
+      rows.push({
+        icon: <Mail size={18} color="#e4c13c" />,
+        label: "Email Us",
+        value: CONTACT_EMAIL,
+        href: `mailto:${CONTACT_EMAIL}`,
+      });
+    }
+    rows.push({ icon: <Clock size={18} color="#e4c13c" />, label: "Hours", value: "24/7 - Always Available" });
+    return rows;
+  }, []);
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -32,8 +55,8 @@ export default function ContactPage() {
         <div className="container" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "12px", flexWrap: "wrap" }}>
           <AlertTriangle size={18} color="#fff" />
           <span style={{ color: "#fff", fontWeight: 700, fontSize: "0.9rem" }}>In an urgent situation?</span>
-          <a href="tel:+18033934907" style={{ color: "#fff", fontWeight: 800, textDecoration: "none", fontSize: "0.95rem", border: "1.5px solid rgba(255,255,255,0.5)", padding: "4px 14px", borderRadius: "9999px" }}>
-            Please call: (803) 393-4907
+          <a href="tel:+17028632706" style={{ color: "#fff", fontWeight: 800, textDecoration: "none", fontSize: "0.95rem", border: "1.5px solid rgba(255,255,255,0.5)", padding: "4px 14px", borderRadius: "9999px" }}>
+            Please call: (702) 863-2706
           </a>
         </div>
       </div>
@@ -53,23 +76,23 @@ export default function ContactPage() {
                 <div style={{ background: "#DCFCE7", border: "1px solid #86EFAC", borderRadius: "14px", padding: "32px", textAlign: "center" }}>
                   <div style={{ fontSize: "3rem", marginBottom: "12px" }}>✅</div>
                   <h3 style={{ color: "#166534", marginBottom: "8px" }}>Message Sent!</h3>
-                  <p style={{ color: "#166534" }}>We&apos;ll get back to you as soon as possible. For urgent help, call (803) 393-4907.</p>
+                  <p style={{ color: "#166534" }}>We&apos;ll get back to you as soon as possible. For urgent help, call (702) 863-2706.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "18px" }}>
                   <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "18px" }}>
                     <div>
                       <label style={{ display: "block", fontSize: "0.875rem", fontWeight: 600, color: "#374151", marginBottom: "6px" }}>Full Name *</label>
-                      <input required type="text" placeholder="John Smith" style={{ width: "100%", padding: "11px 14px", border: "1.5px solid #E5E9EF", borderRadius: "8px", fontSize: "0.95rem", outline: "none", transition: "border 0.2s", color: "#111827" }} onFocus={(e) => e.currentTarget.style.borderColor = "#2563EB"} onBlur={(e) => e.currentTarget.style.borderColor = "#E5E9EF"} />
+                      <input required type="text" placeholder="John Smith" style={{ width: "100%", padding: "11px 14px", border: "1.5px solid #E5E9EF", borderRadius: "8px", fontSize: "0.95rem", outline: "none", transition: "border 0.2s", color: "#111827" }} onFocus={(e) => e.currentTarget.style.borderColor = "#e4c13c"} onBlur={(e) => e.currentTarget.style.borderColor = "#E5E9EF"} />
                     </div>
                     <div>
                       <label style={{ display: "block", fontSize: "0.875rem", fontWeight: 600, color: "#374151", marginBottom: "6px" }}>Phone Number *</label>
-                      <input required type="tel" placeholder="(555) 000-0000" style={{ width: "100%", padding: "11px 14px", border: "1.5px solid #E5E9EF", borderRadius: "8px", fontSize: "0.95rem", outline: "none", color: "#111827" }} onFocus={(e) => e.currentTarget.style.borderColor = "#2563EB"} onBlur={(e) => e.currentTarget.style.borderColor = "#E5E9EF"} />
+                      <input required type="tel" placeholder="(555) 000-0000" style={{ width: "100%", padding: "11px 14px", border: "1.5px solid #E5E9EF", borderRadius: "8px", fontSize: "0.95rem", outline: "none", color: "#111827" }} onFocus={(e) => e.currentTarget.style.borderColor = "#e4c13c"} onBlur={(e) => e.currentTarget.style.borderColor = "#E5E9EF"} />
                     </div>
                   </div>
                   <div>
                     <label style={{ display: "block", fontSize: "0.875rem", fontWeight: 600, color: "#374151", marginBottom: "6px" }}>Email Address</label>
-                    <input type="email" placeholder="you@company.com" style={{ width: "100%", padding: "11px 14px", border: "1.5px solid #E5E9EF", borderRadius: "8px", fontSize: "0.95rem", outline: "none", color: "#111827" }} onFocus={(e) => e.currentTarget.style.borderColor = "#2563EB"} onBlur={(e) => e.currentTarget.style.borderColor = "#E5E9EF"} />
+                    <input type="email" placeholder="you@company.com" style={{ width: "100%", padding: "11px 14px", border: "1.5px solid #E5E9EF", borderRadius: "8px", fontSize: "0.95rem", outline: "none", color: "#111827" }} onFocus={(e) => e.currentTarget.style.borderColor = "#e4c13c"} onBlur={(e) => e.currentTarget.style.borderColor = "#E5E9EF"} />
                   </div>
                   <div>
                     <label style={{ display: "block", fontSize: "0.875rem", fontWeight: 600, color: "#374151", marginBottom: "6px" }}>Service Needed</label>
@@ -91,11 +114,11 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <label style={{ display: "block", fontSize: "0.875rem", fontWeight: 600, color: "#374151", marginBottom: "6px" }}>Message *</label>
-                    <textarea required rows={5} placeholder="Describe your issue or what service you need..." style={{ width: "100%", padding: "11px 14px", border: "1.5px solid #E5E9EF", borderRadius: "8px", fontSize: "0.95rem", outline: "none", color: "#111827", resize: "vertical", fontFamily: "Inter, sans-serif" }} onFocus={(e) => e.currentTarget.style.borderColor = "#2563EB"} onBlur={(e) => e.currentTarget.style.borderColor = "#E5E9EF"} />
+                    <textarea required rows={5} placeholder="Describe your issue or what service you need..." style={{ width: "100%", padding: "11px 14px", border: "1.5px solid #E5E9EF", borderRadius: "8px", fontSize: "0.95rem", outline: "none", color: "#111827", resize: "vertical", fontFamily: "Inter, sans-serif" }} onFocus={(e) => e.currentTarget.style.borderColor = "#e4c13c"} onBlur={(e) => e.currentTarget.style.borderColor = "#E5E9EF"} />
                   </div>
-                  <button type="submit" style={{ background: "#2563EB", color: "#fff", padding: "14px 28px", borderRadius: "10px", fontWeight: 700, fontSize: "1rem", border: "none", cursor: "pointer", transition: "all 0.2s", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px" }}
-                    onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "#1D4ED8"; }}
-                    onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "#2563EB"; }}
+                  <button type="submit" style={{ background: "#e4c13c", color: "#111827", padding: "14px 28px", borderRadius: "10px", fontWeight: 700, fontSize: "1rem", border: "none", cursor: "pointer", transition: "all 0.2s", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px" }}
+                    onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "#c4a82f"; }}
+                    onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "#e4c13c"; }}
                   >
                     Send Message
                   </button>
@@ -106,14 +129,9 @@ export default function ContactPage() {
             {/* Info Sidebar */}
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               <div style={{ background: "#F8F9FB", border: "1px solid #E5E9EF", borderRadius: "14px", padding: "24px" }}>
-                <h4 style={{ marginBottom: "20px" }}>Where You Can Find Us</h4>
-                {[
-                  { icon: <MapPin size={18} color="#2563EB" />, label: "Location", value: "1278 State Rd S-20-233\nRidgeway, SC 29130" },
-                  { icon: <Phone size={18} color="#2563EB" />, label: "Call Us", value: "(803) 393-4907", href: "tel:+18033934907" },
-                  { icon: <Mail size={18} color="#2563EB" />, label: "Email Us", value: "repair@kmtrucktrailer.com", href: "mailto:repair@kmtrucktrailer.com" },
-                  { icon: <Clock size={18} color="#2563EB" />, label: "Hours", value: "24/7 - Always Available" },
-                ].map((item, i) => (
-                  <div key={i} style={{ display: "flex", gap: "12px", alignItems: "flex-start", marginBottom: "18px", paddingBottom: "18px", borderBottom: i < 3 ? "1px solid #E5E9EF" : "none" }}>
+                <h4 style={{ marginBottom: "20px" }}>How to Reach Us</h4>
+                {contactRows.map((item, i) => (
+                  <div key={i} style={{ display: "flex", gap: "12px", alignItems: "flex-start", marginBottom: "18px", paddingBottom: "18px", borderBottom: i < contactRows.length - 1 ? "1px solid #E5E9EF" : "none" }}>
                     <div style={{ marginTop: "2px", flexShrink: 0 }}>{item.icon}</div>
                     <div>
                       <div style={{ fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", color: "#9CA3AF", marginBottom: "4px" }}>{item.label}</div>
@@ -131,28 +149,10 @@ export default function ContactPage() {
                 <div style={{ fontSize: "2rem", marginBottom: "8px" }}>⚡</div>
                 <h4 style={{ color: "#fff", marginBottom: "8px", fontSize: "1rem" }}>Emergency? Call Now</h4>
                 <p style={{ fontSize: "0.85rem", color: "#94A3B8", marginBottom: "16px" }}>Roadside assistance dispatched within 60 min</p>
-                <a href="tel:+18033934907" style={{ display: "block", background: "#2563EB", color: "#fff", padding: "12px", borderRadius: "10px", fontWeight: 700, textDecoration: "none", fontSize: "1rem" }}>
-                  (803) 393-4907
+                <a href="tel:+17028632706" style={{ display: "block", background: "#e4c13c", color: "#111827", padding: "12px", borderRadius: "10px", fontWeight: 700, textDecoration: "none", fontSize: "1rem" }}>
+                  (702) 863-2706
                 </a>
               </div>
-            </div>
-          </div>
-
-          {/* Service Area Map */}
-          <div style={{ marginTop: "56px" }}>
-            <span className="eyebrow" style={{ display: "block", marginBottom: "8px" }}>Find Us</span>
-            <h2 style={{ marginBottom: "20px" }}>Service Area</h2>
-            <div style={{ position: "relative", width: "100%", height: "450px", borderRadius: "16px", overflow: "hidden", border: "1px solid #E5E9EF", background: "#F8F9FB" }}>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3296.434540565181!2d-81.00946068763731!3d34.28846887356797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88561b40bb2a768b%3A0xdce0b0259ffde780!2sK%26M%20Truck%20Trailer%20Repair!5e0!3m2!1sen!2s!4v1772813646615!5m2!1sen!2s"
-                width="100%"
-                height="100%"
-                style={{ border: 0, position: "absolute", top: 0, left: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="K&M Truck Trailer Repair - Service Area"
-              />
             </div>
           </div>
         </div>

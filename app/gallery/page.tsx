@@ -30,7 +30,7 @@ export default function GalleryPage() {
                 maxWidth: "560px",
               }}
             >
-              Our shop, team, and truck and trailer repair work across South Carolina.
+              Our shop, team, and truck and trailer repair work across Las Vegas.
             </p>
           </Reveal>
         </div>

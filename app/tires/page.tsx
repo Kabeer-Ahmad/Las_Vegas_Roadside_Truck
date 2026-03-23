@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import ServicePageTemplate from "../components/ui/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Tire Repair & Change for Trucks in South Carolina | KM Truck & Trailer",
-  description: "Commercial truck tire repair, mounting, and balancing. Roadside flat repair available 24/7 across South Carolina.",
+  title: "Tire Repair & Change for Trucks in Las Vegas | Las Vegas 24 Hour Roadside Truck Services",
+  description: "Commercial truck tire repair, mounting, and balancing. Roadside flat repair available 24/7 across Las Vegas.",
 };
 
 export default function Page() {
   return (
     <ServicePageTemplate
-      title="Tire Repair & Change for Trucks in South Carolina"
-      heroSubtitle="Commercial truck tire repair, mounting, and balancing. Roadside flat repair available 24/7 across South Carolina."
+      title="Tire Repair & Change for Trucks in Las Vegas"
+      heroSubtitle="Commercial truck tire repair, mounting, and balancing. Roadside flat repair available 24/7 across Las Vegas."
       bodyIntro="A flat or blowout can bring your operation to a halt. Our mobile tire team arrives fast with the right equipment to repair or replace your commercial tires roadside, at your yard, or in our shop."
       bodyContent="We carry a wide selection of commercial tire brands and sizes for steer, drive, and trailer positions. Whether it's a simple repair or full replacement, we get you rolling again fast."
       extraSections={[

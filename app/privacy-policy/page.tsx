@@ -1,9 +1,14 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { CONTACT_EMAIL } from "@/lib/site-config";
+
+const privacyContactBody = CONTACT_EMAIL
+  ? `If you have any questions about this Privacy Policy, please contact us at:\n\nLas Vegas 24 Hour Roadside Truck Services\nPhone: (702) 863-2706\nEmail: ${CONTACT_EMAIL}`
+  : `If you have any questions about this Privacy Policy, please contact us at:\n\nLas Vegas 24 Hour Roadside Truck Services\nPhone: (702) 863-2706\n\nYou may also reach us through the Contact Us page on this website.`;
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | KM Truck & Trailer",
-  description: "Privacy Policy for KM Truck & Trailer - how we collect, use, and protect your personal information.",
+  title: "Privacy Policy | Las Vegas 24 Hour Roadside Truck Services",
+  description: "Privacy Policy for Las Vegas 24 Hour Roadside Truck Services - how we collect, use, and protect your personal information.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -58,7 +63,7 @@ export default function PrivacyPolicyPage() {
               },
               {
                 title: "9. Contact Us",
-                body: "If you have any questions about this Privacy Policy, please contact us at:\n\nKM Truck & Trailer Repair\n1278 State Rd S-20-233, Ridgeway, SC 29130\nPhone: (803) 393-4907\nEmail: repair@kmtrucktrailer.com"
+                body: privacyContactBody,
               }
             ].map((section) => (
               <div key={section.title}>

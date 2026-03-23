@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import ServicePageTemplate from "../components/ui/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Steering & Suspension Repair for Trucks in South Carolina | KM Truck & Trailer",
+  title: "Steering & Suspension Repair for Trucks in Las Vegas | Las Vegas 24 Hour Roadside Truck Services",
   description: "Full steering and suspension service - steering gear, tie rods, air bags, shocks, and wheel alignment. Mobile service available.",
 };
 
 export default function Page() {
   return (
     <ServicePageTemplate
-      title="Steering & Suspension Repair for Trucks in South Carolina"
+      title="Steering & Suspension Repair for Trucks in Las Vegas"
       heroSubtitle="Full steering and suspension service - steering gear, tie rods, air bags, shocks, and wheel alignment. Mobile service available."
       bodyIntro="Proper steering and suspension are critical for safe truck operation. Our technicians inspect and repair all components of your truck's steering and suspension systems to ensure confident handling and a smooth ride."
       bodyContent="We service air ride suspension, leaf spring systems, steering gears, tie rods, and perform wheel alignments to extend tire life and improve handling. Road-ready inspection included."

@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import ServicePageTemplate from "../components/ui/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Air & Cabin Filter Replacement for Trucks in South Carolina | KM Truck & Trailer",
+  title: "Air & Cabin Filter Replacement for Trucks in Las Vegas | Las Vegas 24 Hour Roadside Truck Services",
   description: "Engine air filter, cabin air filter, DPF filter, and fuel filter replacement. Preventive maintenance that protects your engine.",
 };
 
 export default function Page() {
   return (
     <ServicePageTemplate
-      title="Air & Cabin Filter Replacement for Trucks in South Carolina"
+      title="Air & Cabin Filter Replacement for Trucks in Las Vegas"
       heroSubtitle="Engine air filter, cabin air filter, DPF filter, and fuel filter replacement. Preventive maintenance that protects your engine."
       bodyIntro="Clogged filters reduce engine performance, increase fuel consumption, and can cause long-term damage. Regular filter replacement is one of the simplest and most cost-effective forms of preventive maintenance."
       bodyContent="We replace all types of truck filters including engine air filters, cabin air filters, fuel filters, and hydraulic filters. Our preventive maintenance service helps you stay DOT compliant and avoid costly breakdowns."

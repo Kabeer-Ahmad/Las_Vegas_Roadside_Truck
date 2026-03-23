@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import ServicePageTemplate from "../components/ui/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Electrical System Repair for Semi Trucks in South Carolina | KM Truck & Trailer",
+  title: "Electrical System Repair for Semi Trucks in Las Vegas | Las Vegas 24 Hour Roadside Truck Services",
   description: "Full electrical diagnostics, wiring repair, ECM/ECU service, and lighting for all commercial trucks. Mobile service available 24/7.",
 };
 
 export default function Page() {
   return (
     <ServicePageTemplate
-      title="Electrical System Repair for Semi Trucks in South Carolina"
+      title="Electrical System Repair for Semi Trucks in Las Vegas"
       heroSubtitle="Full electrical diagnostics, wiring repair, ECM/ECU service, and lighting for all commercial trucks. Mobile service available 24/7."
       bodyIntro="Electrical problems can be complex and difficult to diagnose without the right tools. Our certified technicians use advanced diagnostic equipment to pinpoint faults in your truck's electrical system quickly and accurately."
       bodyContent="From simple lighting repairs to complex ECM reprogramming, we handle the full spectrum of electrical issues on all major truck brands. Our mobile units carry the necessary equipment to perform most repairs roadside."

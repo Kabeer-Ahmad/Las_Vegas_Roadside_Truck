@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import TowingServicePage from "../TowingServicePage";
 
 export const metadata: Metadata = {
-  title: "Emergency Towing Columbia, SC | KM Truck & Trailer",
+  title: "Emergency Towing Las Vegas, NV | Las Vegas 24 Hour Roadside Truck Services",
   description:
-    "24/7 emergency towing on I-26, I-77, Columbia metro. Commercial trucks & semis. Call (803) 393-4907.",
+    "24/7 emergency towing on I-15, US-93, Las Vegas metro. Commercial trucks & semis. Call (702) 863-2706.",
 };
 
 export default function Page() {

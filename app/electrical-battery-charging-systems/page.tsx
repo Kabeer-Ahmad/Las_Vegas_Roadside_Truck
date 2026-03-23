@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import ServicePageTemplate from "../components/ui/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Electrical, Battery & Charging System Service in South Carolina | KM Truck & Trailer",
+  title: "Electrical, Battery & Charging System Service in Las Vegas | Las Vegas 24 Hour Roadside Truck Services",
   description: "Complete truck electrical, battery, and charging system diagnostics and repair. Mobile service available 24/7.",
 };
 
 export default function Page() {
   return (
     <ServicePageTemplate
-      title="Electrical, Battery & Charging System Service in South Carolina"
+      title="Electrical, Battery & Charging System Service in Las Vegas"
       heroSubtitle="Complete truck electrical, battery, and charging system diagnostics and repair. Mobile service available 24/7."
       bodyIntro="Your truck's electrical and charging system powers everything from the engine management system to cab comfort features. When any component fails, it can cause cascading issues throughout the vehicle."
       bodyContent="We diagnose and repair the entire electrical ecosystem - from the alternator and batteries through the wiring harness to individual sensors and modules. Our OEM-level diagnostic tools find faults accurately and quickly."

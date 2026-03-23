@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import ServicePageTemplate from "../components/ui/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Skilled and Quick Brake Repair for Trucks in Columbia, SC | KM Truck & Trailer",
-  description: "Expert truck brake repair - air brakes, drum & disc, ABS diagnostics, and DOT-compliant inspections. Mobile service available 24/7 across South Carolina.",
+  title: "Skilled and Quick Brake Repair for Trucks in Las Vegas, NV | Las Vegas 24 Hour Roadside Truck Services",
+  description: "Expert truck brake repair - air brakes, drum & disc, ABS diagnostics, and DOT-compliant inspections. Mobile service available 24/7 across Las Vegas.",
 };
 
 export default function Page() {
   return (
     <ServicePageTemplate
-      title="Skilled and Quick Brake Repair for Trucks in Columbia, SC"
-      heroSubtitle="Expert truck brake repair - air brakes, drum & disc, ABS diagnostics, and DOT-compliant inspections. Mobile service available 24/7 across South Carolina."
+      title="Skilled and Quick Brake Repair for Trucks in Las Vegas, NV"
+      heroSubtitle="Expert truck brake repair - air brakes, drum & disc, ABS diagnostics, and DOT-compliant inspections. Mobile service available 24/7 across Las Vegas."
       bodyIntro="Your brakes are your most critical safety system. Our certified technicians specialize in heavy-duty truck brake repair, including air brake systems, drum and disc brakes, and ABS diagnostics for all major truck brands."
       bodyContent="We perform thorough DOT-compliant brake inspections and repairs to ensure your stopping power meets all federal safety regulations. Our mobile units can reach you roadside for emergency brake repair any time."
       features={["Air Brake Inspection","Drum & Disc Brakes","ABS Diagnostics","DOT Compliance Check","Emergency Roadside Brake Fix","Brake Adjustment","Slack Adjuster Service","Wheel Seal Replacement"]}

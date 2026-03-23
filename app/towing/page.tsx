@@ -4,9 +4,9 @@ import { ArrowRight } from "lucide-react";
 import ServicePageTemplate from "../components/ui/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Towing & Roadside Recovery in Columbia, SC | KM Truck & Trailer",
+  title: "Towing & Roadside Recovery in Las Vegas, NV | Las Vegas 24 Hour Roadside Truck Services",
   description:
-    "Emergency towing, heavy-duty, semi, flatbed, fuel delivery, tire change, jump start, lockout—separate services in Columbia, SC. 24/7.",
+    "Emergency towing, heavy-duty, semi, flatbed, fuel delivery, tire change, jump start, lockout—separate services in Las Vegas, NV. 24/7.",
 };
 
 const links = [
@@ -25,14 +25,14 @@ const links = [
 export default function TowingHubPage() {
   return (
     <ServicePageTemplate
-      title="Towing & Roadside Recovery in Columbia, SC"
-      heroSubtitle="Choose a service below—each has its own page with details for Columbia, SC and the Midlands. 24/7 dispatch: (803) 393-4907."
-      bodyIntro="Breakdowns don’t wait for business hours. K&M Truck & Trailer Repair provides towing and roadside recovery tailored to commercial trucks and fleets in Columbia, SC—from quick jump-starts and fuel drops to full heavy-duty tows on I-26, I-77, and I-20."
+      title="Towing & Roadside Recovery in Las Vegas, NV"
+      heroSubtitle="Choose a service below—each has its own page with details for Las Vegas, NV and Southern Nevada. 24/7 dispatch: (702) 863-2706."
+      bodyIntro="Breakdowns don’t wait for business hours. Las Vegas 24 Hour Roadside Truck Services provides towing and roadside recovery tailored to commercial trucks and fleets in Las Vegas, NV—from quick jump-starts and fuel drops to full heavy-duty tows on I-15, US-93, and I-11."
       bodyContent="Open any service for full information. Same dispatch number for every service—we route the right equipment for what you need."
       bodyAfterContent={
         <div style={{ marginTop: "24px", marginBottom: "32px" }}>
           <h3 style={{ fontSize: "1.2rem", fontWeight: 800, color: "#111827", marginBottom: "16px" }}>
-            Towing services (Columbia, SC)
+            Towing services (Las Vegas, NV)
           </h3>
           <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: "10px" }}>
             {links.map((l) => (
@@ -53,7 +53,7 @@ export default function TowingHubPage() {
                   }}
                 >
                   {l.label}
-                  <ArrowRight size={18} color="#2563EB" />
+                  <ArrowRight size={18} color="#e4c13c" />
                 </Link>
               </li>
             ))}
@@ -62,10 +62,10 @@ export default function TowingHubPage() {
       }
       features={[
         "10 dedicated service pages",
-        "Columbia & Midlands",
+        "Las Vegas & Southern Nevada",
         "24/7 Dispatch",
         "Commercial & semi focus",
-        "I-26 / I-77 / I-20",
+        "I-15 / US-93 / I-11",
         "Heavy & light duty",
         "Flatbed & roadside",
         "Fuel · tires · jump · lockout",
@@ -77,8 +77,8 @@ export default function TowingHubPage() {
             "So you can read exactly what you need—emergency tow vs fuel delivery—without scrolling one long page. Same phone number for all.",
         },
         {
-          question: "Do you tow in Columbia, SC 24/7?",
-          answer: "Yes. Call (803) 393-4907 anytime.",
+          question: "Do you tow in Las Vegas, NV 24/7?",
+          answer: "Yes. Call (702) 863-2706 anytime.",
         },
         {
           question: "Can you tow a loaded semi?",

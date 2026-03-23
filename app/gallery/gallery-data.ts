@@ -8,10 +8,10 @@ export interface GalleryImage {
 }
 
 export const galleryImages: GalleryImage[] = [
-  { src: "/kmtruck-images/Km-Truck-Trailer-7.jpg", alt: "K&M Truck Trailer Repair", caption: "Our shop and team" },
+  { src: "/site-gallery/shop-team-1.jpg", alt: "Las Vegas 24 Hour Roadside Truck Services", caption: "Our shop and team" },
   { src: "/why_us_banner.jpg", alt: "Truck repair and service", caption: "Truck & trailer repair" },
   { src: "/hero-truck-white.png", alt: "Commercial truck", caption: "Commercial truck service" },
-  { src: "/about-shop.png", alt: "K&M Truck repair shop", caption: "Our facility" },
+  { src: "/about-shop.png", alt: "Las Vegas 24 Hour Roadside Truck Services shop", caption: "Our facility" },
   { src: "/mechanic-diagnostic-1.jpg", alt: "Engine diagnostics", caption: "Engine diagnostics" },
   { src: "/mechanic-diagnostic-2.jpg", alt: "Mechanic at work", caption: "Diagnostics & repair" },
   { src: "/transmission-img-1.jpg", alt: "Transmission service", caption: "Transmission repair" },

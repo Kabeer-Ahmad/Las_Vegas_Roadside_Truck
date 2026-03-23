@@ -41,7 +41,7 @@ export default function BlogsPage() {
               }}
             >
               Practical advice on maintenance, roadside safety, and keeping your
-              fleet running. From the team at K&amp;M Truck &amp; Trailer Repair.
+              fleet running. From the team at Las Vegas 24 Hour Roadside Truck Services.
             </p>
           </Reveal>
         </div>
@@ -179,7 +179,7 @@ export default function BlogsPage() {
                           gap: "6px",
                           fontSize: "0.9rem",
                           fontWeight: 700,
-                          color: "#2563EB",
+                          color: "#e4c13c",
                           marginTop: "auto",
                         }}
                         className="blog-card-cta"

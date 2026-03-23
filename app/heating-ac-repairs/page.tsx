@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import ServicePageTemplate from "../components/ui/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Heating & AC Repairs for Trucks in South Carolina | KM Truck & Trailer",
+  title: "Heating & AC Repairs for Trucks in Las Vegas | Las Vegas 24 Hour Roadside Truck Services",
   description: "Full truck HVAC repairs - heater core, blower motor, AC recharge, compressor, and more. Mobile service available.",
 };
 
 export default function Page() {
   return (
     <ServicePageTemplate
-      title="Heating & AC Repairs for Trucks in South Carolina"
+      title="Heating & AC Repairs for Trucks in Las Vegas"
       heroSubtitle="Full truck HVAC repairs - heater core, blower motor, AC recharge, compressor, and more. Mobile service available."
       bodyIntro="A comfortable cab keeps drivers focused and safe on long hauls. Our HVAC technicians restore your truck's heating and air conditioning systems to full working order, handling everything from simple recharges to complex component replacements."
       bodyContent="We service all major truck HVAC systems including sleeper compartment climate control, APU air conditioning, and parking heaters. Most repairs can be performed at your location."

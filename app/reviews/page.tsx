@@ -47,7 +47,7 @@ function GoogleLogoIcon({ size = 24 }: { size?: number }) {
 }
 
 const AVATAR_COLORS = [
-  "#2563EB", "#059669", "#D97706", "#7C3AED", "#DC2626",
+  "#e4c13c", "#059669", "#D97706", "#7C3AED", "#DC2626",
   "#0891B2", "#4F46E5", "#EA580C", "#16A34A", "#9333EA",
   "#0D9488", "#C026D3", "#CA8A04",
 ];
@@ -83,7 +83,7 @@ export default function ReviewsPage() {
                 maxWidth: "560px",
               }}
             >
-              Real feedback from drivers and fleet managers across South Carolina.
+              Real feedback from drivers and fleet managers across Las Vegas.
             </p>
           </Reveal>
         </div>
@@ -165,29 +165,29 @@ export default function ReviewsPage() {
                   justifyContent: "center",
                   gap: "10px",
                   padding: "14px 24px",
-                  background: "#2563EB",
-                  color: "#fff",
+                  background: "#e4c13c",
+                  color: "#111827",
                   fontWeight: 700,
                   fontSize: "0.95rem",
                   borderRadius: "12px",
                   textDecoration: "none",
-                  border: "2px solid #2563EB",
-                  boxShadow: "0 2px 8px rgba(37,99,235,0.3)",
+                  border: "2px solid #e4c13c",
+                  boxShadow: "0 2px 8px rgba(228, 193, 60,0.3)",
                   transition: "background 0.2s, transform 0.2s, box-shadow 0.2s",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.background = "#1D4ED8";
+                  e.currentTarget.style.background = "#c4a82f";
                   e.currentTarget.style.transform = "translateY(-1px)";
-                  e.currentTarget.style.boxShadow = "0 4px 14px rgba(37,99,235,0.4)";
+                  e.currentTarget.style.boxShadow = "0 4px 14px rgba(228, 193, 60,0.4)";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.background = "#2563EB";
+                  e.currentTarget.style.background = "#e4c13c";
                   e.currentTarget.style.transform = "translateY(0)";
-                  e.currentTarget.style.boxShadow = "0 2px 8px rgba(37,99,235,0.3)";
+                  e.currentTarget.style.boxShadow = "0 2px 8px rgba(228, 193, 60,0.3)";
                 }}
               >
                 Read more reviews on Google
-                <ExternalLink size={16} style={{ color: "rgba(255,255,255,0.9)" }} />
+                <ExternalLink size={16} style={{ color: "rgba(17,24,39,0.85)" }} />
               </a>
             </div>
           </Reveal>

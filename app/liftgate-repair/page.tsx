@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import ServicePageTemplate from "../components/ui/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Liftgate Repair & Maintenance in South Carolina | KM Truck & Trailer",
+  title: "Liftgate Repair & Maintenance in Las Vegas | Las Vegas 24 Hour Roadside Truck Services",
   description: "Hydraulic, electrical, and platform liftgate repair for all brands. Keep your liftgate safe and operational.",
 };
 
 export default function Page() {
   return (
     <ServicePageTemplate
-      title="Liftgate Repair & Maintenance in South Carolina"
+      title="Liftgate Repair & Maintenance in Las Vegas"
       heroSubtitle="Hydraulic, electrical, and platform liftgate repair for all brands. Keep your liftgate safe and operational."
       bodyIntro="A malfunctioning liftgate can bring your delivery operation to a standstill. Our technicians repair hydraulic systems, electrical components, platform mechanisms, and safety features on all major liftgate brands."
       bodyContent="We service Maxon, Waltco, Anthony, Tommy Gate, and other major liftgate brands. Safety is our priority - every liftgate repair includes a full safety inspection and weight capacity verification."

@@ -3,38 +3,14 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { MapPin, Phone, ArrowRight } from "lucide-react";
 import Reveal from "@/app/components/ui/Reveal";
+import { SERVICE_AREAS } from "@/app/service-areas-data";
 
 export const metadata: Metadata = {
   title:
-    "Service Areas | KM Truck & Trailer | Columbia, SC & Surrounding Areas",
+    "Service Areas | Las Vegas 24 Hour Roadside Truck Services | Las Vegas, NV & Surrounding Regions",
   description:
-    "KM Truck & Trailer serves truck drivers across South Carolina. Find your nearest service location in Columbia, Lexington, Rock Hill, and 11 more cities.",
+    "Las Vegas 24 Hour Roadside Truck Services covers Las Vegas, Henderson, North Las Vegas, Pahrump, Mesquite, Boulder City, and more—plus Bakersfield, CA. 24/7 mobile truck repair.",
 };
-
-const areas = [
-  { city: "Columbia", slug: "columbia-sc", highways: ["I-77", "I-26", "I-20"] },
-  { city: "Irmo", slug: "irmo-sc", highways: ["I-26"] },
-  { city: "St. Andrews", slug: "st-andrews-sc", highways: ["I-26"] },
-  {
-    city: "Downtown Columbia",
-    slug: "downtown-columbia-sc",
-    highways: ["I-126", "I-77"],
-  },
-  { city: "The Summit", slug: "the-summit-sc", highways: ["I-77"] },
-  { city: "Forest Acres", slug: "forest-acres-sc", highways: ["I-77"] },
-  {
-    city: "Northeast Columbia",
-    slug: "northeast-columbia-sc",
-    highways: ["I-20"],
-  },
-  { city: "Winnsboro", slug: "winnsboro-sc", highways: ["US-321"] },
-  { city: "Lugoff", slug: "lugoff-sc", highways: ["US-1", "I-20"] },
-  { city: "Cayce", slug: "cayce-sc", highways: ["I-26", "US-1"] },
-  { city: "Gaston", slug: "gaston-sc", highways: ["I-26"] },
-  { city: "Lexington", slug: "lexington-sc", highways: ["US-1", "I-20"] },
-  { city: "Newberry", slug: "newberry-sc", highways: ["I-26"] },
-  { city: "Rock Hill", slug: "rock-hill-sc", highways: ["I-77", "US-21"] },
-];
 
 export default function ServiceAreasPage() {
   return (
@@ -52,7 +28,7 @@ export default function ServiceAreasPage() {
       >
         <Image
           src="/service-areas-bg.png"
-          alt="Service Areas across South Carolina"
+          alt="Service areas across Las Vegas and the Southwest"
           fill
           priority
           quality={100}
@@ -80,7 +56,7 @@ export default function ServiceAreasPage() {
             className="page-hero__breadcrumb anim-fade-up"
             style={{ marginBottom: "20px" }}
           >
-            <Link href="/" style={{ color: "#93C5FD", textDecoration: "none" }}>
+            <Link href="/" style={{ color: "#f5e6a8", textDecoration: "none" }}>
               Home
             </Link>{" "}
             <span style={{ color: "#475569" }}>/</span>
@@ -98,7 +74,7 @@ export default function ServiceAreasPage() {
                 letterSpacing: "-0.02em",
               }}
             >
-              We Come to You<br />Wherever You Are in SC
+              We Come to You<br />Across Nevada &amp; Beyond
             </h1>
             <p
               className="anim-fade-up delay-2"
@@ -111,32 +87,32 @@ export default function ServiceAreasPage() {
                 textShadow: "0 1px 8px rgba(0,0,0,0.3)",
               }}
             >
-              K&M Truck & Trailer serves drivers and fleets across 14+ cities in
-              South Carolina with 24/7 mobile repair units. Don&apos;t see your
-              city? Call us, we may still help.
+              Las Vegas 24 Hour Roadside Truck Services serves drivers and fleets across
+              Las Vegas, Southern Nevada, and select California corridors with 24/7 mobile repair units.
+              Don&apos;t see your city? Call us—we may still help.
             </p>
             <div
               className="page-hero__ctas anim-fade-up delay-3"
               style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}
             >
               <a
-                href="tel:+18033934907"
+                href="tel:+17028632706"
                 className="tilt-card"
                 style={{
                   display: "inline-flex",
                   alignItems: "center",
                   gap: "10px",
-                  background: "#2563EB",
-                  color: "#fff",
+                  background: "#e4c13c",
+                  color: "#111827",
                   padding: "16px 32px",
                   borderRadius: "12px",
                   fontWeight: 700,
                   fontSize: "1.1rem",
                   textDecoration: "none",
-                  boxShadow: "0 6px 20px rgba(37,99,235,0.4)",
+                  boxShadow: "0 6px 20px rgba(228, 193, 60,0.4)",
                 }}
               >
-                <Phone size={20} /> Call (803) 393-4907
+                <Phone size={20} /> Call (702) 863-2706
               </a>
             </div>
           </div>
@@ -154,7 +130,7 @@ export default function ServiceAreasPage() {
               >
                 Coverage Map
               </span>
-              <h2>Cities We Serve in South Carolina</h2>
+              <h2>Areas We Serve</h2>
               <p>
                 Click any city to learn more about our services in that area.
               </p>
@@ -167,10 +143,10 @@ export default function ServiceAreasPage() {
               gap: "20px",
             }}
           >
-            {areas.map((area, i) => (
+            {SERVICE_AREAS.map((area, i) => (
               <Reveal key={area.slug} type="up" delay={i * 50}>
                 <Link
-                  href={`/${area.slug}`}
+                  href={`/service-areas/${area.slug}`}
                   className="tilt-card"
                   style={{
                     background: "#fff",
@@ -194,12 +170,12 @@ export default function ServiceAreasPage() {
                       style={{
                         width: "46px",
                         height: "46px",
-                        background: "#EFF6FF",
+                        background: "#fffbf0",
                         borderRadius: "10px",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
-                        color: "#2563EB",
+                        color: "#e4c13c",
                         flexShrink: 0,
                       }}
                     >
@@ -217,7 +193,7 @@ export default function ServiceAreasPage() {
                         {area.city}
                       </h4>
                       <span style={{ fontSize: "0.8rem", color: "#64748B" }}>
-                        South Carolina
+                        {area.region}
                       </span>
                     </div>
                   </div>
@@ -252,7 +228,7 @@ export default function ServiceAreasPage() {
                       alignItems: "center",
                       gap: "6px",
                       fontSize: "0.85rem",
-                      color: "#2563EB",
+                      color: "#e4c13c",
                       fontWeight: 600,
                     }}
                   >
@@ -285,7 +261,7 @@ export default function ServiceAreasPage() {
             transform: "translateX(-50%)",
             width: "600px",
             height: "600px",
-            background: "rgba(37,99,235,0.15)",
+            background: "rgba(228, 193, 60,0.15)",
             filter: "blur(100px)",
             borderRadius: "50%",
             pointerEvents: "none",
@@ -320,14 +296,14 @@ export default function ServiceAreasPage() {
               still be able to reach you for emergency repairs.
             </p>
             <a
-              href="tel:+18033934907"
+              href="tel:+17028632706"
               className="tilt-card"
               style={{
                 display: "inline-flex",
                 alignItems: "center",
                 gap: "10px",
-                background: "#2563EB",
-                color: "#fff",
+                background: "#e4c13c",
+                color: "#111827",
                 padding: "16px 32px",
                 borderRadius: "12px",
                 fontWeight: 700,
@@ -336,7 +312,7 @@ export default function ServiceAreasPage() {
                 boxShadow: "0 6px 20px rgba(0,0,0,0.3)",
               }}
             >
-              <Phone size={20} /> Call (803) 393-4907
+              <Phone size={20} /> Call (702) 863-2706
             </a>
           </Reveal>
         </div>

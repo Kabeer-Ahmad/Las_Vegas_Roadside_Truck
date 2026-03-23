@@ -26,9 +26,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostBySlug(slug);
-  if (!post) return { title: "Blog | KM Truck & Trailer" };
+  if (!post) return { title: "Blog | Las Vegas 24 Hour Roadside Truck Services" };
   return {
-    title: `${post.title} | KM Truck & Trailer Blog`,
+    title: `${post.title} | Las Vegas 24 Hour Roadside Truck Services Blog`,
     description: post.excerpt,
   };
 }

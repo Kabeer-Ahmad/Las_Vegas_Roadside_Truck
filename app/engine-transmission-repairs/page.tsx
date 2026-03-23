@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import ServicePageTemplate from "../components/ui/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Engine & Transmission Repairs in South Carolina | KM Truck & Trailer",
+  title: "Engine & Transmission Repairs in Las Vegas | Las Vegas 24 Hour Roadside Truck Services",
   description: "Complete engine and transmission repair packages - from minor fixes to full overhauls. Certified technicians for all major diesel engines.",
 };
 
 export default function Page() {
   return (
     <ServicePageTemplate
-      title="Engine & Transmission Repairs in South Carolina"
+      title="Engine & Transmission Repairs in Las Vegas"
       heroSubtitle="Complete engine and transmission repair packages - from minor fixes to full overhauls. Certified technicians for all major diesel engines."
       bodyIntro="Engine and transmission issues are among the most complex and costly truck repairs. Our experienced team handles everything from fault diagnostics to complete rebuilds, with transparent pricing and fast turnaround."
       bodyContent="We specialize in Cummins, Detroit Diesel, and Paccar engines, along with Allison and Eaton Fuller transmissions. From minor tune-ups to full powertrain overhauls, we have the expertise to get it right the first time."

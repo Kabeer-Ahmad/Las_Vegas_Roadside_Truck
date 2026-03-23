@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import { serviceMenuGroups } from "@/app/components/services-nav-data";
+import { NAV_LOCATION_LINKS } from "@/app/service-areas-data";
 
 const aboutLinks = [
   { label: "About Us", href: "/abous-us" },
@@ -11,16 +12,7 @@ const aboutLinks = [
   { label: "Blogs", href: "/blogs" },
 ];
 
-const locationLinks = [
-  { label: "Columbia, SC", href: "/columbia-sc" },
-  { label: "Irmo, SC", href: "/irmo-sc" },
-  { label: "Lexington, SC", href: "/lexington-sc" },
-  { label: "Cayce, SC", href: "/cayce-sc" },
-  { label: "Rock Hill, SC", href: "/rock-hill-sc" },
-  { label: "Newberry, SC", href: "/newberry-sc" },
-  { label: "Winnsboro, SC", href: "/winnsboro-sc" },
-  { label: "Lugoff, SC", href: "/lugoff-sc" },
-];
+const locationLinks = NAV_LOCATION_LINKS;
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -47,8 +39,8 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="nav-logo">
             <Image
-              src="/new_logo.webp"
-              alt="KM Truck & Trailer Repair"
+              src="/Logo.png"
+              alt="Las Vegas 24 Hour Roadside Truck Services"
               width={200}
               height={64}
               priority
@@ -199,7 +191,7 @@ export default function Navbar() {
 
           {/* CTA + Hamburger */}
           <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-            <a href="tel:+18033934907" className="nav-cta">
+            <a href="tel:+17028632706" className="nav-cta">
               <Phone size={20} /> Call Now
             </a>
             <button
@@ -363,8 +355,8 @@ export default function Navbar() {
             >
               Contact
             </Link>
-            <a href="tel:+18033934907" className="nav-mobile-cta">
-              <Phone size={22} /> (803) 393-4907
+            <a href="tel:+17028632706" className="nav-mobile-cta">
+              <Phone size={22} /> (702) 863-2706
             </a>
           </div>
         </div>

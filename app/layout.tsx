@@ -3,36 +3,41 @@ import Script from "next/script";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { SITE_URL, CONTACT_EMAIL } from "@/lib/site-config";
+
+const openGraphBase = {
+  title: "Las Vegas 24 Hour Roadside Truck Services | 24/7 Truck & Trailer Repair",
+  description:
+    "24/7 emergency truck repair, DPF cleaning, brakes, tires & more in Las Vegas. Call (702) 863-2706.",
+  type: "website" as const,
+  siteName: "Las Vegas 24 Hour Roadside Truck Services",
+};
 
 export const metadata: Metadata = {
   title: {
     default:
-      "Truck & Trailer Repair in South Carolina | 24/7 Emergency Service | KM Truck & Trailer",
-    template: "%s | KM Truck & Trailer",
+      "Truck & Trailer Repair in Las Vegas | 24/7 Emergency Service | Las Vegas 24 Hour Roadside Truck Services",
+    template: "%s | Las Vegas 24 Hour Roadside Truck Services",
   },
   description:
-    "Stuck on I-77? K&M offers reliable truck repair and tire service in South Carolina. 24/7 emergency truck repair, DPF cleaning & more. Call (803) 393-4907!",
+    "Stuck on I-15? Las Vegas 24 Hour Roadside Truck Services offers reliable truck repair and tire service in Las Vegas. 24/7 emergency truck repair, DPF cleaning & more. Call (702) 863-2706!",
   keywords: [
-    "truck repair South Carolina",
-    "trailer repair Columbia SC",
+    "truck repair Las Vegas",
+    "trailer repair Las Vegas NV",
     "DPF cleaning",
     "emergency roadside truck repair",
-    "semi truck repair Columbia",
+    "semi truck repair Las Vegas",
     "24/7 truck repair",
   ],
   openGraph: {
-    title: "KM Truck & Trailer Repair | South Carolina",
-    description:
-      "24/7 emergency truck repair, DPF cleaning, brakes, tires & more in South Carolina. Call (803) 393-4907.",
-    type: "website",
-    url: "https://kmtrucktrailer.com",
-    siteName: "KM Truck & Trailer",
+    ...openGraphBase,
+    ...(SITE_URL ? { url: SITE_URL } : {}),
   },
   twitter: {
     card: "summary_large_image",
-    title: "KM Truck & Trailer | 24/7 Truck Repair in SC",
+    title: "Las Vegas 24 Hour Roadside Truck Services | 24/7 Truck Repair in Las Vegas",
     description:
-      "Professional truck & trailer repair in South Carolina. Call now!",
+      "Professional truck & trailer repair in Las Vegas. Call now!",
   },
 };
 
@@ -41,6 +46,24 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    name: "Las Vegas 24 Hour Roadside Truck Services",
+    ...(SITE_URL ? { url: SITE_URL } : {}),
+    telephone: "+17028632706",
+    ...(CONTACT_EMAIL ? { email: CONTACT_EMAIL } : {}),
+    areaServed: [
+      { "@type": "City", name: "Las Vegas", containedInPlace: { "@type": "State", name: "Nevada" } },
+      { "@type": "AdministrativeArea", name: "Clark County", containedInPlace: { "@type": "State", name: "Nevada" } },
+    ],
+    openingHours: "Mo-Su 00:00-23:59",
+    priceRange: "$$",
+    description:
+      "Professional 24/7 truck and trailer repair in Las Vegas. DPF cleaning, brakes, tires, emergency roadside and more.",
+    foundingDate: "2013",
+  };
+
   return (
     <html lang="en">
       <head>
@@ -53,27 +76,7 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "AutoRepair",
-              name: "KM Truck & Trailer Repair",
-              url: "https://kmtrucktrailer.com",
-              telephone: "+18033934907",
-              email: "repair@kmtrucktrailer.com",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "1278 State Rd S-20-233",
-                addressLocality: "Ridgeway",
-                addressRegion: "SC",
-                postalCode: "29130",
-                addressCountry: "US",
-              },
-              openingHours: "Mo-Su 00:00-23:59",
-              priceRange: "$$",
-              description:
-                "Professional 24/7 truck and trailer repair in South Carolina. DPF cleaning, brakes, tires, emergency roadside and more.",
-              foundingDate: "2013",
-            }),
+            __html: JSON.stringify(structuredData),
           }}
         />
       </head>

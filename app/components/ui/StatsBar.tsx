@@ -19,10 +19,10 @@ interface StatItem {
 }
 
 const stats: StatItem[] = [
-  { iconKey: "Clock", stat: "60 Min", label: "Avg Response Time", desc: "Fast dispatch anywhere in SC" },
+  { iconKey: "Clock", stat: "60 Min", label: "Avg Response Time", desc: "Fast dispatch across Las Vegas & Southern NV" },
   { iconKey: "Wrench", stat: "Certified", label: "Technicians", desc: "Experts in all major truck brands" },
   { iconKey: "DollarSign", stat: "Upfront", label: "Transparent Pricing", desc: "No hidden fees, ever" },
-  { iconKey: "Map", stat: "14+ Cities", label: "Across SC", desc: "Mobile units covering all of SC" },
+  { iconKey: "Map", stat: "20 Areas", label: "Service coverage", desc: "Mobile units across Las Vegas & surrounding cities" },
 ];
 
 const containerVariants = {
@@ -86,7 +86,7 @@ function StatCard({
           : {
               y: -8,
               scale: 1.02,
-              boxShadow: "0 20px 40px rgba(37,99,235,0.12), 0 8px 16px rgba(0,0,0,0.08)",
+              boxShadow: "0 20px 40px rgba(228, 193, 60,0.12), 0 8px 16px rgba(0,0,0,0.08)",
               transition: { type: "spring", stiffness: 400, damping: 25 },
             }
       }
@@ -111,7 +111,7 @@ function StatCard({
         style={{
           position: "absolute",
           inset: 0,
-          background: "linear-gradient(135deg, rgba(37,99,235,0.06) 0%, transparent 60%)",
+          background: "linear-gradient(135deg, rgba(228, 193, 60,0.06) 0%, transparent 60%)",
           opacity: 0,
           borderRadius: "16px",
           pointerEvents: "none",
@@ -125,12 +125,12 @@ function StatCard({
           width: "56px",
           height: "56px",
           flexShrink: 0,
-          background: "linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%)",
+          background: "linear-gradient(135deg, #fffbf0 0%, #fce9a8 100%)",
           borderRadius: "14px",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          color: "#2563EB",
+          color: "#e4c13c",
           position: "relative",
           zIndex: 1,
         }}
@@ -319,7 +319,7 @@ export default function StatsBar() {
                 style={{
                   height: "100%",
                   width: `${(scrollProgress * 100).toFixed(1)}%`,
-                  background: "linear-gradient(90deg, #2563EB, #3B82F6)",
+                  background: "linear-gradient(90deg, #e4c13c, #eccb4a)",
                   borderRadius: "2px",
                   transition: "width 0.15s ease-out",
                 }}

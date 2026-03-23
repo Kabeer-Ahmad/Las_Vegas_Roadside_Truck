@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import ServicePageTemplate from "../components/ui/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Expert Trailer Repair in South Carolina - Mobile & Shop Service | KM Truck & Trailer",
+  title: "Expert Trailer Repair in Las Vegas - Mobile & Shop Service | Las Vegas 24 Hour Roadside Truck Services",
   description: "Full trailer repair including structural, liftgate, doors, electrical, and DOT inspections. We keep your trailer road-ready.",
 };
 
 export default function Page() {
   return (
     <ServicePageTemplate
-      title="Expert Trailer Repair in South Carolina - Mobile & Shop Service"
+      title="Expert Trailer Repair in Las Vegas - Mobile & Shop Service"
       heroSubtitle="Full trailer repair including structural, liftgate, doors, electrical, and DOT inspections. We keep your trailer road-ready."
       bodyIntro="A healthy tractor is only half the battle - your trailer needs to be road-ready too. Our comprehensive trailer repair services include structural repairs, floor repair, lighting systems, doors, liftgates, and full DOT inspections."
       bodyContent="We work on all trailer types including dry van, flatbed, refrigerated, and specialty trailers. Our technicians are experienced in DOT compliance repairs and can help you avoid costly violations."

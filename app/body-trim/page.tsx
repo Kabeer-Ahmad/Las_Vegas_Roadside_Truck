@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import ServicePageTemplate from "../components/ui/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Truck Body & Trim Repair in South Carolina | KM Truck & Trailer",
+  title: "Truck Body & Trim Repair in Las Vegas | Las Vegas 24 Hour Roadside Truck Services",
   description: "Professional truck cab, body, and trim repair to restore your truck's appearance and structural integrity.",
 };
 
 export default function Page() {
   return (
     <ServicePageTemplate
-      title="Truck Body & Trim Repair in South Carolina"
+      title="Truck Body & Trim Repair in Las Vegas"
       heroSubtitle="Professional truck cab, body, and trim repair to restore your truck's appearance and structural integrity."
       bodyIntro="From minor trim damage to cab panel repairs, our technicians handle all types of truck body work. We focus on restoring both appearance and structural integrity to ensure your truck is road-ready."
       bodyContent="We work on all major truck brands and can assist with insurance claims for repair documentation. Our shop is equipped to handle everything from door repairs to full panel replacement."

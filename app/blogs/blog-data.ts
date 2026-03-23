@@ -21,7 +21,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "A clogged diesel particulate filter can hurt performance and fuel economy. Learn the warning signs so you can schedule DPF cleaning before costly damage.",
     date: "2025-02-15",
-    author: "K&M Truck & Trailer",
+    author: "Las Vegas 24 Hour Roadside Truck Services",
     image: "/why_us_banner.jpg",
     imageAlt: "Truck repair technician inspecting DPF system",
     readTime: "5 min read",
@@ -77,11 +77,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "h3",
-        text: "Professional DPF service in South Carolina",
+        text: "Professional DPF service in Las Vegas",
       },
       {
         type: "p",
-        text: "At K&M Truck & Trailer, we offer certified DPF cleaning and forced regeneration service across South Carolina. Our mobile team can often come to you—roadside, at the truck stop, or at your yard—so you don't have to lose time driving to a shop. Regular DPF maintenance keeps your truck compliant, efficient, and on the road.",
+        text: "At Las Vegas 24 Hour Roadside Truck Services, we offer certified DPF cleaning and forced regeneration service across Las Vegas. Our mobile team can often come to you—roadside, at the truck stop, or at your yard—so you don't have to lose time driving to a shop. Regular DPF maintenance keeps your truck compliant, efficient, and on the road.",
       },
     ],
   },
@@ -89,9 +89,9 @@ export const blogPosts: BlogPost[] = [
     slug: "what-to-do-when-stuck-roadside",
     title: "What to Do When You're Stuck on the Road: A Driver's Guide to Emergency Roadside Repair",
     excerpt:
-      "Breakdowns happen. Here's how to stay safe, who to call, and what to expect when you need emergency truck or trailer repair in South Carolina.",
+      "Breakdowns happen. Here's how to stay safe, who to call, and what to expect when you need emergency truck or trailer repair in Las Vegas.",
     date: "2025-02-08",
-    author: "K&M Truck & Trailer",
+    author: "Las Vegas 24 Hour Roadside Truck Services",
     image: "/hero-truck-white.png",
     imageAlt: "Commercial truck on the road",
     readTime: "6 min read",
@@ -119,11 +119,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "h3",
-        text: "24/7 dispatch across South Carolina",
+        text: "24/7 dispatch across Las Vegas",
       },
       {
         type: "p",
-        text: "At K&M Truck & Trailer, we dispatch 24/7 across South Carolina. We aim to reach most locations within about 60 minutes. Our mobile units are equipped for common roadside repairs: tire changes, brake adjustments, air line leaks, jump-starts, and more. If the job can't be completed on the spot, we can advise on towing or the next steps.",
+        text: "At Las Vegas 24 Hour Roadside Truck Services, we dispatch 24/7 across Las Vegas. We aim to reach most locations within about 60 minutes. Our mobile units are equipped for common roadside repairs: tire changes, brake adjustments, air line leaks, jump-starts, and more. If the job can't be completed on the spot, we can advise on towing or the next steps.",
       },
       {
         type: "h2",
@@ -139,7 +139,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Consider a follow-up inspection. Sometimes a roadside fix is just that—a fix to get you moving. A full check at our shop or on a scheduled visit can catch related issues before they strand you again. We're here to keep South Carolina's drivers and fleets moving safely.",
+        text: "Consider a follow-up inspection. Sometimes a roadside fix is just that—a fix to get you moving. A full check at our shop or on a scheduled visit can catch related issues before they strand you again. We're here to keep Las Vegas's drivers and fleets moving safely.",
       },
     ],
   },
@@ -149,8 +149,8 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Scheduled maintenance isn't just a line item—it's one of the best ways to cut downtime, avoid costly repairs, and protect your bottom line.",
     date: "2025-01-28",
-    author: "K&M Truck & Trailer",
-    image: "/kmtruck-images/Km-Truck-Trailer-7.jpg",
+    author: "Las Vegas 24 Hour Roadside Truck Services",
+    image: "/site-gallery/shop-team-1.jpg",
     imageAlt: "Technician performing fleet maintenance",
     readTime: "7 min read",
     introLength: 2,
@@ -173,11 +173,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "h3",
-        text: "Fleet programs at K&M",
+        text: "Fleet programs at Las Vegas 24 Hour Roadside Truck Services",
       },
       {
         type: "p",
-        text: "At K&M Truck & Trailer, we work with fleets of all sizes across South Carolina. We offer PM packages that can be tailored to your mileage, hours, or calendar—whether you run a few trucks or a large fleet. Many services can be done at your location to minimize downtime.",
+        text: "At Las Vegas 24 Hour Roadside Truck Services, we work with fleets of all sizes across Las Vegas. We offer PM packages that can be tailored to your mileage, hours, or calendar—whether you run a few trucks or a large fleet. Many services can be done at your location to minimize downtime.",
       },
       {
         type: "h2",
@@ -203,8 +203,8 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Brake wear varies by driving conditions, load, and maintenance. Learn how to spot wear early, when to replace vs. reline, and how to avoid DOT violations and costly downtime.",
     date: "2025-01-15",
-    author: "K&M Truck & Trailer",
-    image: "/kmtruck-images/Km-Truck-Trailer-7.jpg",
+    author: "Las Vegas 24 Hour Roadside Truck Services",
+    image: "/site-gallery/shop-team-1.jpg",
     imageAlt: "Technician inspecting heavy-duty truck brakes",
     readTime: "12 min read",
     introLength: 2,
@@ -215,7 +215,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "This guide walks you through the signs of brake wear, the difference between replacement and reline, how often to inspect, and what to expect when you bring your rig in for brake service in South Carolina.",
+        text: "This guide walks you through the signs of brake wear, the difference between replacement and reline, how often to inspect, and what to expect when you bring your rig in for brake service in Las Vegas.",
       },
       {
         type: "h2",
@@ -283,11 +283,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "h2",
-        text: "Brake service at K&M Truck & Trailer",
+        text: "Brake service at Las Vegas 24 Hour Roadside Truck Services",
       },
       {
         type: "p",
-        text: "At K&M Truck & Trailer, we perform brake inspections, relines, and full brake jobs on tractors and trailers. Our team works on air and hydraulic systems and can often service you at your location or handle your rig in our shop. We'll tell you exactly what's worn, what's in spec, and what can wait until the next PM.",
+        text: "At Las Vegas 24 Hour Roadside Truck Services, we perform brake inspections, relines, and full brake jobs on tractors and trailers. Our team works on air and hydraulic systems and can often service you at your location or handle your rig in our shop. We'll tell you exactly what's worn, what's in spec, and what can wait until the next PM.",
       },
       {
         type: "p",
@@ -301,7 +301,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Trailer lights and wiring take a beating from weather, road spray, and wear. Learn how to prevent failures, troubleshoot common issues, and stay DOT-compliant.",
     date: "2025-01-05",
-    author: "K&M Truck & Trailer",
+    author: "Las Vegas 24 Hour Roadside Truck Services",
     image: "/why_us_banner.jpg",
     imageAlt: "Trailer lighting and electrical inspection",
     readTime: "14 min read",
@@ -401,11 +401,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "h3",
-        text: "Trailer electrical repair at K&M",
+        text: "Trailer electrical repair at Las Vegas 24 Hour Roadside Truck Services",
       },
       {
         type: "p",
-        text: "K&M Truck & Trailer offers full trailer electrical and lighting repair across South Carolina. We troubleshoot no-light and intermittent issues, replace harnesses and connectors, and get your trailer legal and reliable. We can often come to you—at the yard, at a terminal, or roadside—so you don't have to lose time. If you're tired of chasing trailer light gremlins or need a full lighting and wiring check before an inspection, give us a call.",
+        text: "Las Vegas 24 Hour Roadside Truck Services offers full trailer electrical and lighting repair across Las Vegas. We troubleshoot no-light and intermittent issues, replace harnesses and connectors, and get your trailer legal and reliable. We can often come to you—at the yard, at a terminal, or roadside—so you don't have to lose time. If you're tired of chasing trailer light gremlins or need a full lighting and wiring check before an inspection, give us a call.",
       },
     ],
   },

@@ -34,7 +34,7 @@ export const allFaqCategories: FAQCategory[] = [
     category: "Battery",
     href: "/battery",
     items: [
-      { question: "Can you jump-start my truck roadside?", answer: "Yes! We provide mobile jump-start service 24/7 across South Carolina for all commercial trucks and trailers." },
+      { question: "Can you jump-start my truck roadside?", answer: "Yes! We provide mobile jump-start service 24/7 across Las Vegas for all commercial trucks and trailers." },
       { question: "How do I know if my battery is failing?", answer: "Slow engine cranking, dim lights, warning lights, or a battery that needs frequent jump-starts are all signs of a failing battery." },
       { question: "Do you test the alternator too?", answer: "Absolutely. We inspect the full charging system - battery, alternator, and voltage regulator - to find the root cause." },
       { question: "What battery brands do you use?", answer: "We install premium commercial-grade batteries from top brands, sized for your specific truck application." },
@@ -44,7 +44,7 @@ export const allFaqCategories: FAQCategory[] = [
     category: "DPF Cleaning",
     href: "/dpf",
     items: [
-      { question: "Do you offer mobile DPF regen service?", answer: "Yes! We offer mobile forced regeneration wherever you are in South Carolina - roadside, truck stop, or your yard." },
+      { question: "Do you offer mobile DPF regen service?", answer: "Yes! We offer mobile forced regeneration wherever you are in Las Vegas - roadside, truck stop, or your yard." },
       { question: "What brands do you service?", answer: "We service all major brands including Freightliner, Kenworth, Peterbilt, Volvo, International, and Mack with Cummins, Detroit Diesel, and Paccar engines." },
       { question: "How long does DPF cleaning take?", answer: "Most DPF cleaning services take 2–4 hours depending on the level of clogging. Force regen services typically take 45–90 minutes." },
       { question: "When do I know I need DPF cleaning?", answer: "Signs include yellow/amber DPF warning lights, reduced engine power, increased fuel consumption, or the engine entering 'limp mode'." },
@@ -54,9 +54,9 @@ export const allFaqCategories: FAQCategory[] = [
     category: "Emergency Roadside",
     href: "/emergency-roadside-repair",
     items: [
-      { question: "How fast can you reach me?", answer: "We aim to arrive within 60 minutes for most locations in and around Columbia, SC. We dispatch immediately upon your call." },
+      { question: "How fast can you reach me?", answer: "We aim to arrive within 60 minutes for most locations in and around Las Vegas. We dispatch immediately upon your call." },
       { question: "What can you fix roadside?", answer: "We repair tires, brakes, air leaks, electrical faults, jump-starts, fuel delivery, hub issues, and many other mechanical failures roadside." },
-      { question: "Do you serve all of South Carolina?", answer: "Yes! Our mobile units serve all of South Carolina with primary coverage along I-77, I-26, and I-20 corridors." },
+      { question: "Do you serve all of Las Vegas?", answer: "Yes! Our mobile units serve the Las Vegas metro and surrounding areas with primary coverage along I-15, US-93, and I-11." },
       { question: "Is emergency service available on holidays?", answer: "Yes - our emergency team is available 24 hours a day, 365 days a year, including all holidays." },
     ],
   },
@@ -114,7 +114,7 @@ export const allFaqCategories: FAQCategory[] = [
     category: "Air Conditioning",
     href: "/air-conditioning",
     items: [
-      { question: "Can you recharge my truck AC roadside?", answer: "Yes, we offer mobile AC service including refrigerant recharge and leak diagnosis across South Carolina." },
+      { question: "Can you recharge my truck AC roadside?", answer: "Yes, we offer mobile AC service including refrigerant recharge and leak diagnosis across Las Vegas." },
       { question: "What refrigerant type do you use?", answer: "We use R-134a for most truck applications and R-1234yf for newer model vehicles as specified by the manufacturer." },
       { question: "How do I know if my AC compressor needs replacement?", answer: "Signs include loud clicking or grinding noise from the AC, no cold air, visible damage to the compressor, or clutch not engaging." },
       { question: "Do you repair parking heaters?", answer: "Yes, we service and repair auxiliary parking heaters (Webasto, Espar, etc.) for sleeper comfort." },
@@ -126,7 +126,7 @@ export const allFaqCategories: FAQCategory[] = [
     items: [
       { question: "What is a force regen?", answer: "A forced regeneration is a process where your truck's DPF (diesel particulate filter) is cleaned by burning off accumulated soot using elevated exhaust temperatures, initiated via diagnostic software." },
       { question: "How long does force regen take?", answer: "A typical forced regeneration takes 45–90 minutes to complete, depending on the engine and DPF condition." },
-      { question: "Do you come to my location?", answer: "Yes! Our mobile team comes to your truck's location - roadside, truck stop, or your yard - anywhere in South Carolina." },
+      { question: "Do you come to my location?", answer: "Yes! Our mobile team comes to your truck's location - roadside, truck stop, or your yard - anywhere in Las Vegas." },
       { question: "When do I need a force regen vs DPF cleaning?", answer: "Force regen clears soot through heat. If soot levels are very high or there's ash buildup, physical DPF cleaning may also be needed." },
     ],
   },
@@ -137,7 +137,7 @@ export const allFaqCategories: FAQCategory[] = [
       { question: "What triggers the need for a forced regeneration?", answer: "A DPF warning light, engine entering limp mode, reduced power, or excessive soot accumulation prompting the system to demand a regen." },
       { question: "How is forced regen different from passive regen?", answer: "Passive regen happens automatically during highway driving. Forced regen requires a technician to initiate it via diagnostic software when passive regen hasn't cleared the filter." },
       { question: "Can I do a forced regen myself?", answer: "No - forced regen requires professional diagnostic equipment connected to your truck's ECM. Attempting it improperly can cause damage." },
-      { question: "Is mobile service available?", answer: "Absolutely. We provide mobile forced regeneration service throughout South Carolina, 24 hours a day, 7 days a week." },
+      { question: "Is mobile service available?", answer: "Absolutely. We provide mobile forced regeneration service throughout Las Vegas, 24 hours a day, 7 days a week." },
     ],
   },
   {
@@ -146,7 +146,7 @@ export const allFaqCategories: FAQCategory[] = [
     items: [
       { question: "Can you unlock my truck without breaking anything?", answer: "Yes. Our technicians use professional lockout tools designed for commercial trucks that gain entry without damage." },
       { question: "Do you unlock trailers too?", answer: "Yes, we handle both cab and cargo trailer lockouts, including situations with lost or broken keys." },
-      { question: "How fast can you respond to a lockout?", answer: "We typically respond within 45–60 minutes for most locations in South Carolina." },
+      { question: "How fast can you respond to a lockout?", answer: "We typically respond within 45–60 minutes for most locations in Las Vegas." },
       { question: "Are you available nights and weekends?", answer: "Yes! Lockout service is available 24/7, 365 days a year - including nights, weekends, and holidays." },
     ],
   },
@@ -154,7 +154,7 @@ export const allFaqCategories: FAQCategory[] = [
     category: "Fuel Delivery",
     href: "/fuel-delivery",
     items: [
-      { question: "How quickly can you deliver fuel?", answer: "We typically reach your location within 60–90 minutes anywhere in South Carolina." },
+      { question: "How quickly can you deliver fuel?", answer: "We typically reach your location within 60–90 minutes anywhere in Las Vegas." },
       { question: "Do you deliver DEF (Diesel Exhaust Fluid) too?", answer: "Call us about DEF delivery - availability varies by location and unit." },
       { question: "Do you need to prime the fuel system after delivery?", answer: "If the truck ran completely out of fuel, priming the system is usually necessary. Our technicians handle this as part of the service." },
       { question: "How much fuel do you typically deliver?", answer: "We typically deliver enough to get you to the nearest fueling station - around 20–50 gallons for most situations." },
@@ -166,7 +166,7 @@ export const allFaqCategories: FAQCategory[] = [
     items: [
       { question: "What truck brands do you service?", answer: "We service all major brands: Freightliner, Kenworth, Peterbilt, Volvo, International, Mack, and Western Star." },
       { question: "Do you offer fleet maintenance programs?", answer: "Yes, we offer preventive maintenance programs tailored to your fleet size and operational needs." },
-      { question: "Can you handle emergency breakdowns?", answer: "Absolutely. Our emergency mobile team is available 24/7 to respond to breakdowns anywhere in South Carolina." },
+      { question: "Can you handle emergency breakdowns?", answer: "Absolutely. Our emergency mobile team is available 24/7 to respond to breakdowns anywhere in Las Vegas." },
       { question: "How do you handle engine diagnostics?", answer: "We use professional diagnostic tools including Cummins Insite, Detroit Diagnostic Link, and other OEM software for accurate fault reading." },
     ],
   },
@@ -244,7 +244,7 @@ export const allFaqCategories: FAQCategory[] = [
     category: "Trailer Tires",
     href: "/trailer-tires",
     items: [
-      { question: "Can you change trailer tires roadside?", answer: "Yes. We respond 24/7 for roadside trailer tire changes and flat repairs anywhere in South Carolina." },
+      { question: "Can you change trailer tires roadside?", answer: "Yes. We respond 24/7 for roadside trailer tire changes and flat repairs anywhere in Las Vegas." },
       { question: "What trailer tire sizes do you carry?", answer: "We carry all common trailer tire sizes including 11R22.5, 11R24.5, 245/70R19.5, and more." },
       { question: "Do you also repair the rim?", answer: "We inspect rims for damage during tire service and can repair or replace bent or cracked rims." },
       { question: "How long does a trailer tire change take?", answer: "A standard trailer tire change takes 30–60 minutes on-site, depending on access and conditions." },
@@ -256,7 +256,7 @@ export const allFaqCategories: FAQCategory[] = [
     items: [
       { question: "Do you stock steer tires for 18-wheelers?", answer: "Yes, we stock all positions including steer, drive, and trailer tires for commercial semi-trucks." },
       { question: "Can you match OEM specifications?", answer: "Yes, we match OEM tire specifications for load rating, speed rating, and size." },
-      { question: "Do you offer roadside tire replacement?", answer: "Yes - 24/7 roadside tire replacement for all semi-truck configurations anywhere in South Carolina." },
+      { question: "Do you offer roadside tire replacement?", answer: "Yes - 24/7 roadside tire replacement for all semi-truck configurations anywhere in Las Vegas." },
       { question: "How do I know when to replace my semi tires?", answer: "Replace tires when tread depth is below 4/32\" (steer) or 2/32\" (drive/trailer), when there is visible sidewall damage, or after any blowout event." },
     ],
   },
@@ -281,33 +281,33 @@ export const allFaqCategories: FAQCategory[] = [
     ],
   },
   {
-    category: "Towing – Emergency & Heavy Duty (Columbia, SC)",
+    category: "Towing – Emergency & Heavy Duty (Las Vegas, NV)",
     href: "/towing/emergency-towing",
     items: [
-      { question: "Do you offer 24/7 emergency towing in Columbia, SC?", answer: "Yes. Call (803) 393-4907 anytime—we dispatch wreckers for commercial trucks and semis on I-26, I-77, and across the Columbia metro." },
+      { question: "Do you offer 24/7 emergency towing in Las Vegas, NV?", answer: "Yes. Call (702) 863-2706 anytime—we dispatch wreckers for commercial trucks and semis on I-15, US-93, and across the Las Vegas metro." },
       { question: "What is heavy-duty towing vs light-duty?", answer: "Heavy-duty uses rotators or heavy wreckers for loaded semis and Class 7–8 trucks. Light-duty covers pickups, vans, and smaller box trucks—see our dedicated pages for each." },
-      { question: "Can you tow my loaded semi without unloading?", answer: "Often yes, when weight and equipment match. Tell dispatch your gross weight and trailer type so we send the right Columbia, SC unit." },
-      { question: "Where can I read more about emergency towing?", answer: "Visit our Emergency Towing page for Columbia-specific response info, or the Towing hub at /towing for all services." },
+      { question: "Can you tow my loaded semi without unloading?", answer: "Often yes, when weight and equipment match. Tell dispatch your gross weight and trailer type so we send the right Las Vegas, NV unit." },
+      { question: "Where can I read more about emergency towing?", answer: "Visit our Emergency Towing page for Las Vegas-area response info, or the Towing hub at /towing for all services." },
     ],
   },
   {
     category: "Towing – Semi, Flatbed & Light Duty",
     href: "/towing/semi-truck-towing",
     items: [
-      { question: "Do you tow tractor-trailers in Columbia?", answer: "Yes—dry vans, reefers, flatbeds, winch-outs, and distribution-center pickups. We protect fifth wheels and trailer clearance." },
-      { question: "When should I ask for flatbed towing?", answer: "Low clearance, sensitive cargo, or any time the load must stay level—flatbed avoids hook stress on specialty Columbia moves." },
-      { question: "Is light-duty towing available for fleet vans?", answer: "Yes. Fair pricing for local tows to Columbia repair shops, impound coordination, and clearing busy roads like Garners Ferry or Two Notch." },
-      { question: "How do I choose the right towing service?", answer: "Start at kmtrucktrailer.com/towing—each service has its own page (semi, flatbed, light duty, etc.) with FAQs tailored to that job." },
+      { question: "Do you tow tractor-trailers in Las Vegas?", answer: "Yes—dry vans, reefers, flatbeds, winch-outs, and distribution-center pickups. We protect fifth wheels and trailer clearance." },
+      { question: "When should I ask for flatbed towing?", answer: "Low clearance, sensitive cargo, or any time the load must stay level—flatbed avoids hook stress on specialty Las Vegas moves." },
+      { question: "Is light-duty towing available for fleet vans?", answer: "Yes. Fair pricing for local tows to Las Vegas repair shops, impound coordination, and clearing busy corridors across the valley." },
+      { question: "How do I choose the right towing service?", answer: "Start on our Towing page at /towing—each service has its own page (semi, flatbed, light duty, etc.) with FAQs tailored to that job." },
     ],
   },
   {
     category: "Towing – Roadside: Fuel, Tires, Jump & Lockout",
     href: "/towing/fuel-delivery",
     items: [
-      { question: "Do you deliver diesel if I run empty near Columbia?", answer: "Yes—diesel to your shoulder or lot in Columbia, Lexington, and along I-77. We can help prime if you ran completely dry." },
-      { question: "Can you change a steer tire on I-26?", answer: "Yes—commercial tire change roadside for steer, drive, and trailer with proper torque. Bad rims may need a tow to a Columbia shop." },
+      { question: "Do you deliver diesel if I run empty near Las Vegas?", answer: "Yes—diesel to your shoulder or lot in Las Vegas, Henderson, and along I-15. We can help prime if you ran completely dry." },
+      { question: "Can you change a steer tire on I-15?", answer: "Yes—commercial tire change roadside for steer, drive, and trailer with proper torque. Bad rims may need a tow to a Las Vegas shop." },
       { question: "Why use heavy-duty jump start instead of a car pack?", answer: "Semis need commercial cranking amps—we test charging after start and flag bad alternators so you’re not stranded twice." },
-      { question: "Do you unlock cabs and trailers without damage?", answer: "Yes—professional lockout tools for Columbia commercial cabs, trailer doors, and toolboxes. Available 24/7 like our other towing services." },
+      { question: "Do you unlock cabs and trailers without damage?", answer: "Yes—professional lockout tools for Las Vegas commercial cabs, trailer doors, and toolboxes. Available 24/7 like our other towing services." },
     ],
   },
 ];

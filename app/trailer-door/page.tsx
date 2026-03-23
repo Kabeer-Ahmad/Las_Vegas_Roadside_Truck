@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import ServicePageTemplate from "../components/ui/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Trailer Door Repair & Replacement in South Carolina | KM Truck & Trailer",
+  title: "Trailer Door Repair & Replacement in Las Vegas | Las Vegas 24 Hour Roadside Truck Services",
   description: "Roll-up door, swing door, hinges, seals, and locking mechanism repair for all trailer types. Mobile service available.",
 };
 
 export default function Page() {
   return (
     <ServicePageTemplate
-      title="Trailer Door Repair & Replacement in South Carolina"
+      title="Trailer Door Repair & Replacement in Las Vegas"
       heroSubtitle="Roll-up door, swing door, hinges, seals, and locking mechanism repair for all trailer types. Mobile service available."
       bodyIntro="A damaged or faulty trailer door can compromise cargo security and DOT compliance. Our technicians repair and replace all types of trailer doors, including roll-up doors, swing door hinges, seals, and locking mechanisms."
       bodyContent="We work on all trailer brands and door types. Whether your door won't open, won't close, or has damage from a dock incident, we can restore it to proper working condition quickly."

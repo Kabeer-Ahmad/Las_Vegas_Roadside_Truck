@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import TowingServicePage from "../TowingServicePage";
 
 export const metadata: Metadata = {
-  title: "Semi Truck Towing Columbia, SC | KM Truck & Trailer",
+  title: "Semi Truck Towing Las Vegas, NV | Las Vegas 24 Hour Roadside Truck Services",
   description:
-    "Semi truck & tractor-trailer towing in Columbia, SC. Fifth-wheel safe, I-20 corridor. 24/7 dispatch.",
+    "Semi truck & tractor-trailer towing in Las Vegas, NV. Fifth-wheel safe, I-11 / I-15 corridor. 24/7 dispatch.",
 };
 
 export default function Page() {

@@ -24,7 +24,7 @@ function FAQAccordion({ items }: { items: FAQItem[] }) {
                 transition: "transform 0.25s",
                 transform: open === i ? "rotate(180deg)" : "rotate(0)",
                 flexShrink: 0,
-                color: "#2563EB",
+                color: "#e4c13c",
               }}
             />
           </button>
@@ -61,7 +61,7 @@ export default function FAQPage() {
               }}
             >
               Find answers to common questions about our truck and trailer repair
-              services across South Carolina. Browse by topic or search for what
+              services across Las Vegas. Browse by topic or search for what
               you need.
             </p>
           </Reveal>
@@ -106,7 +106,7 @@ export default function FAQPage() {
                       gap: "6px",
                       fontSize: "0.9rem",
                       fontWeight: 600,
-                      color: "#2563EB",
+                      color: "#e4c13c",
                       textDecoration: "none",
                     }}
                   >

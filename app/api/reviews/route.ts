@@ -9,7 +9,8 @@
  */
 import { NextResponse } from "next/server";
 
-const BUSINESS_SEARCH_QUERY = "K&M Truck Trailer Repair 1278 State Rd Ridgeway SC";
+const BUSINESS_SEARCH_QUERY =
+  "Las Vegas 24 Hour Roadside Truck Services Las Vegas NV (702) 863-2706";
 
 export interface ReviewItem {
   author: string;
