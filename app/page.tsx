@@ -131,7 +131,7 @@ export default function HomePage() {
                 <span style={{ fontSize: "0.8rem", fontWeight: 700, color: "#e4c13c" }}>EXCELLENT</span>
                 <span style={{ fontSize: "0.8rem", color: "#D1D5DB", display: "flex", alignItems: "center", gap: "6px" }}>
                   <Image src="/Google_Logo.webp" alt="Google" width={56} height={18} style={{ objectFit: "contain", height: "18px", width: "auto" }} unoptimized />
-                  Based on 100+ Google reviews
+                  Based on Google reviews
                 </span>
               </div>
             </Reveal>
@@ -228,10 +228,10 @@ export default function HomePage() {
             <Reveal type="left">
               <div style={{ position: "relative", aspectRatio: "4/5", borderRadius: "16px", overflow: "hidden", maxHeight: "500px" }}>
                 <Image
-                  src="/site-gallery/shop-team-1.jpg"
-                  alt="Las Vegas 24 Hour Roadside Truck Services technician"
+                  src="/truck_gal_5.jpg"
+                  alt="Las Vegas 24 Hour Roadside Truck Services technician servicing a commercial truck"
                   fill
-                  style={{ objectFit: "contain", objectPosition: "bottom center" }}
+                  style={{ objectFit: "cover", objectPosition: "center" }}
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>

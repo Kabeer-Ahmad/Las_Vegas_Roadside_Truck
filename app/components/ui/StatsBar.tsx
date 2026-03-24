@@ -86,7 +86,7 @@ function StatCard({
           : {
               y: -8,
               scale: 1.02,
-              boxShadow: "0 20px 40px rgba(228, 193, 60,0.12), 0 8px 16px rgba(0,0,0,0.08)",
+              boxShadow: "0 20px 48px rgba(0,0,0,0.5), 0 0 0 1px rgba(228, 193, 60, 0.18)",
               transition: { type: "spring", stiffness: 400, damping: 25 },
             }
       }
@@ -96,10 +96,10 @@ function StatCard({
         display: "flex",
         alignItems: "center",
         gap: "18px",
-        background: "#0a0a0a",
-        border: "1px solid #2A2A2A",
+        background: "rgba(8, 8, 8, 0.92)",
+        border: "1px solid rgba(228, 193, 60, 0.12)",
         borderRadius: "16px",
-        boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
+        boxShadow: "0 12px 40px rgba(0,0,0,0.55)",
         cursor: "default",
         position: "relative",
         overflow: "hidden",
@@ -111,7 +111,7 @@ function StatCard({
         style={{
           position: "absolute",
           inset: 0,
-          background: "linear-gradient(135deg, rgba(228, 193, 60,0.06) 0%, transparent 60%)",
+          background: "linear-gradient(135deg, rgba(228, 193, 60, 0.08) 0%, transparent 58%)",
           opacity: 0,
           borderRadius: "16px",
           pointerEvents: "none",
@@ -125,7 +125,8 @@ function StatCard({
           width: "56px",
           height: "56px",
           flexShrink: 0,
-          background: "linear-gradient(135deg, #fffbf0 0%, #fce9a8 100%)",
+          background: "rgba(228, 193, 60, 0.1)",
+          border: "1px solid rgba(228, 193, 60, 0.22)",
           borderRadius: "14px",
           display: "flex",
           alignItems: "center",
@@ -159,7 +160,7 @@ function StatCard({
           style={{
             fontSize: "0.8rem",
             fontWeight: 700,
-            color: "#F3F4F6",
+            color: "#F9FAFB",
             marginTop: "4px",
           }}
           initial={isSlider ? false : { opacity: 0 }}
@@ -171,7 +172,7 @@ function StatCard({
         <motion.div
           style={{
             fontSize: "0.75rem",
-            color: "#9CA3AF",
+            color: "#D1D5DB",
             marginTop: "2px",
             lineHeight: 1.4,
           }}
@@ -229,18 +230,29 @@ export default function StatsBar() {
   }, [isMobile]);
 
   return (
-    <section className="stats-section" style={{ background: "#0a0a0a", padding: "80px 0 60px" }}>
+    <section
+      className="stats-section stats-section--warm"
+      style={{
+        position: "relative",
+        background:
+          "radial-gradient(ellipse 90% 65% at 50% 42%, rgba(228, 193, 60, 0.06) 0%, transparent 52%), linear-gradient(180deg, #000000 0%, #0a0a0a 14%, #12100e 45%, #12100e 55%, #0a0a0a 86%, #000000 100%)",
+        padding: "80px 0 60px",
+        borderTop: "1px solid #2A2A2A",
+        borderBottom: "1px solid #2A2A2A",
+      }}
+    >
       <div className="container">
         <h2
           className="stats-section-heading"
           style={{
-            fontSize: "clamp(0.75rem, 1.5vw, 0.8rem)",
-            fontWeight: 600,
-            letterSpacing: "0.12em",
+            fontSize: "clamp(1.125rem, 3.2vw, 1.75rem)",
+            fontWeight: 800,
+            letterSpacing: "0.08em",
             textTransform: "uppercase",
-            color: "#D1D5DB",
+            color: "#e8dfc8",
             textAlign: "center",
-            marginBottom: "28px",
+            marginBottom: "32px",
+            textShadow: "0 2px 24px rgba(0,0,0,0.6)",
           }}
         >
           Why choose us
@@ -311,7 +323,7 @@ export default function StatsBar() {
                 marginTop: "16px",
                 height: "4px",
                 borderRadius: "2px",
-                background: "#E5E9EF",
+                background: "rgba(255, 255, 255, 0.06)",
                 overflow: "hidden",
               }}
             >
@@ -319,7 +331,7 @@ export default function StatsBar() {
                 style={{
                   height: "100%",
                   width: `${(scrollProgress * 100).toFixed(1)}%`,
-                  background: "linear-gradient(90deg, #e4c13c, #eccb4a)",
+                  background: "linear-gradient(90deg, #a78b2c, #e4c13c)",
                   borderRadius: "2px",
                   transition: "width 0.15s ease-out",
                 }}

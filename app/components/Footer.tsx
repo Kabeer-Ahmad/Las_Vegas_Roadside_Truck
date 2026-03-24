@@ -97,7 +97,23 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="footer-bottom-bar" style={{ borderTop: "1px solid #2A2A2A", padding: "20px 0" }}>
         <div className="container footer-bottom" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "12px" }}>
-          <p style={{ fontSize: "0.8rem", color: "#9CA3AF", margin: 0 }}>© 2025 Las Vegas 24 Hour Roadside Truck Services. All rights reserved.</p>
+          <p style={{ fontSize: "0.8rem", color: "#9CA3AF", margin: 0 }}>
+            © 2025 Las Vegas 24 Hour Roadside Truck Services. All rights reserved.{" "}
+            <a
+              href="https://loftyrankers.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#78716c", textDecoration: "none" }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = "#e4c13c";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = "#78716c";
+              }}
+            >
+              Made by Lofty Rankers
+            </a>
+          </p>
           <div className="footer-bottom-links" style={{ display: "flex", gap: "20px" }}>
             <Link href="/privacy-policy" style={{ fontSize: "0.8rem", color: "#9CA3AF", textDecoration: "none" }}>Privacy Policy</Link>
             <Link href="/terms-and-conditions" style={{ fontSize: "0.8rem", color: "#9CA3AF", textDecoration: "none" }}>Terms &amp; Conditions</Link>

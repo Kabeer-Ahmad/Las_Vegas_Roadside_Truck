@@ -1,10 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
-import { Phone, ArrowRight } from "lucide-react";
+import { Phone, ArrowRight, MapPin } from "lucide-react";
 
 export default function HeroSection() {
-  /* 3D tilt on CTA button hover */
   const handleTilt = (e: React.MouseEvent<HTMLDivElement>) => {
     const el = e.currentTarget;
     const rect = el.getBoundingClientRect();
@@ -17,170 +17,169 @@ export default function HeroSection() {
   };
 
   return (
-    <div className="hero-outer" style={{ width: "100%", position: "relative", backgroundColor: "#141210" }}>
+    <div className="hero-outer hero-home" style={{ width: "100%", position: "relative", backgroundColor: "#0a0908" }}>
       <section
-        className="hero-section-main"
+        className="hero-section-main hero-home__section"
         style={{
-          position: "relative", width: "100%", height: "78svh", minHeight: "440px",
-          display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden"
+          position: "relative",
+          width: "100%",
+          display: "flex",
+          alignItems: "stretch",
+          overflow: "hidden",
         }}
       >
-      {/* ── Floating particles (hidden on mobile for clean background) ── */}
-      <div className="hero-particles" style={{ position: "absolute", inset: 0, zIndex: 1, pointerEvents: "none", overflow: "hidden" }}>
-        {[
-          { w: 6, h: 6, top: "15%", left: "72%", delay: "0s", dur: "7s", opacity: 0.35 },
-          { w: 10, h: 10, top: "65%", left: "80%", delay: "1.5s", dur: "9s", opacity: 0.2 },
-          { w: 4, h: 4, top: "30%", left: "85%", delay: "0.8s", dur: "6s", opacity: 0.45 },
-          { w: 8, h: 8, top: "75%", left: "68%", delay: "2s", dur: "11s", opacity: 0.25 },
-          { w: 5, h: 5, top: "45%", left: "78%", delay: "3s", dur: "8s", opacity: 0.3 },
-          { w: 12, h: 12, top: "20%", left: "90%", delay: "1s", dur: "13s", opacity: 0.15 },
-          { w: 3, h: 3, top: "55%", left: "92%", delay: "4s", dur: "7s", opacity: 0.5 },
-          { w: 7, h: 7, top: "85%", left: "75%", delay: "2.5s", dur: "10s", opacity: 0.2 },
-          { w: 5, h: 5, top: "8%", left: "70%", delay: "0.5s", dur: "8s", opacity: 0.3 },
-          { w: 9, h: 9, top: "40%", left: "82%", delay: "1.2s", dur: "10s", opacity: 0.22 },
-          { w: 4, h: 4, top: "60%", left: "88%", delay: "2.8s", dur: "6.5s", opacity: 0.4 },
-          { w: 6, h: 6, top: "25%", left: "76%", delay: "1.8s", dur: "9s", opacity: 0.28 },
-          { w: 11, h: 11, top: "70%", left: "72%", delay: "0.3s", dur: "12s", opacity: 0.18 },
-          { w: 3, h: 3, top: "50%", left: "95%", delay: "3.5s", dur: "7s", opacity: 0.48 },
-          { w: 7, h: 7, top: "12%", left: "82%", delay: "2.2s", dur: "8.5s", opacity: 0.25 },
-          { w: 5, h: 5, top: "78%", left: "85%", delay: "1.6s", dur: "9.5s", opacity: 0.32 },
-          { w: 8, h: 8, top: "35%", left: "88%", delay: "0.7s", dur: "11s", opacity: 0.2 },
-          { w: 4, h: 4, top: "90%", left: "70%", delay: "4.2s", dur: "6s", opacity: 0.42 },
-          { w: 6, h: 6, top: "48%", left: "74%", delay: "2.6s", dur: "8s", opacity: 0.3 },
-          { w: 10, h: 10, top: "18%", left: "78%", delay: "1.4s", dur: "10.5s", opacity: 0.18 },
-          /* Left side */
-          { w: 5, h: 5, top: "20%", left: "12%", delay: "0.2s", dur: "8s", opacity: 0.32 },
-          { w: 8, h: 8, top: "60%", left: "8%", delay: "1.8s", dur: "10s", opacity: 0.22 },
-          { w: 4, h: 4, top: "35%", left: "22%", delay: "0.6s", dur: "6.5s", opacity: 0.4 },
-          { w: 7, h: 7, top: "78%", left: "18%", delay: "2.4s", dur: "9s", opacity: 0.26 },
-          { w: 6, h: 6, top: "12%", left: "28%", delay: "1s", dur: "7.5s", opacity: 0.3 },
-          { w: 10, h: 10, top: "45%", left: "5%", delay: "3s", dur: "11s", opacity: 0.18 },
-          { w: 3, h: 3, top: "55%", left: "32%", delay: "2s", dur: "6s", opacity: 0.48 },
-          { w: 9, h: 9, top: "85%", left: "25%", delay: "0.8s", dur: "10.5s", opacity: 0.2 },
-          { w: 5, h: 5, top: "28%", left: "38%", delay: "1.5s", dur: "8.5s", opacity: 0.35 },
-          { w: 7, h: 7, top: "68%", left: "15%", delay: "0.4s", dur: "9.5s", opacity: 0.24 },
-          { w: 4, h: 4, top: "42%", left: "42%", delay: "2.8s", dur: "7s", opacity: 0.38 },
-          { w: 6, h: 6, top: "92%", left: "10%", delay: "1.2s", dur: "8s", opacity: 0.28 },
-          { w: 11, h: 11, top: "50%", left: "2%", delay: "3.2s", dur: "12s", opacity: 0.16 },
-          { w: 5, h: 5, top: "15%", left: "35%", delay: "2.2s", dur: "7.5s", opacity: 0.33 },
-          { w: 8, h: 8, top: "72%", left: "30%", delay: "0.9s", dur: "10s", opacity: 0.22 },
-        ].map((p, i) => (
-          <div key={i} style={{
-            position: "absolute",
-            top: p.top, left: p.left,
-            width: p.w, height: p.h,
-            borderRadius: "50%",
-            background: "#f0d56a",
-            opacity: p.opacity,
-            animation: `particleDrift ${p.dur} ${p.delay} ease-in-out infinite`,
-          }} />
-        ))}
-        {/* Glowing orbs — hidden on mobile */}
-        {[
-          { size: 300, top: "10%", left: "60%", color: "rgba(228, 193, 60, 0.1)", delay: "0s" },
-          { size: 200, top: "55%", left: "75%", color: "rgba(228, 193, 60, 0.07)", delay: "3s" },
-        ].map((orb, i) => (
-          <div key={i} className="hero-glow-orb" style={{
-            position: "absolute",
-            top: orb.top, left: orb.left,
-            width: orb.size, height: orb.size,
-            borderRadius: "50%",
-            background: orb.color,
-            filter: "blur(30px)",
-            animation: `floatSlow 10s ${orb.delay} ease-in-out infinite`,
-          }} />
-        ))}
-      </div>
+        <div className="hero-home__ambient" aria-hidden />
+        <div className="hero-home__accent-line" aria-hidden />
 
-      {/* ── Gradient overlay for text readability ── */}
-      <div className="hero-overlay" style={{
-        position: "absolute", inset: 0, zIndex: 2,
-        background: "linear-gradient(105deg, rgba(20,18,16,0.94) 0%, rgba(38,33,28,0.82) 32%, rgba(58,50,42,0.45) 55%, rgba(85,75,58,0.12) 78%, transparent 100%)"
-      }} />
-      <div className="hero-overlay-bottom" style={{
-        position: "absolute", inset: 0, zIndex: 2,
-        background: "linear-gradient(to top, rgba(20,18,16,0.5) 0%, transparent 42%)"
-      }} />
-
-      {/* ── Hero content (staggered animations) ── */}
-      <div className="container hero-content-wrapper" style={{ position: "relative", zIndex: 3, padding: "0 24px", width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-        <div className="hero-content-inner" style={{ maxWidth: "720px", paddingBottom: "20px", textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center" }}>
-
-          {/* Badge */}
-          <div className="anim-fade-up delay-1 live-dot" style={{
-            display: "inline-flex", alignItems: "center", gap: "8px",
-            background: "rgba(228, 193, 60,0.22)", border: "1px solid rgba(228, 193, 60,0.45)",
-            color: "#f5e6a8", fontSize: "clamp(0.65rem, 1.5vw, 0.75rem)", fontWeight: 700,
-            letterSpacing: "0.10em", textTransform: "uppercase",
-            padding: "clamp(6px, 1.5vw, 8px) clamp(14px, 2vw, 18px)", borderRadius: "9999px", marginBottom: "clamp(20px, 4vw, 28px)"
-          }}>
-            <span style={{
-              width: 8, height: 8, borderRadius: "50%",
-              background: "#e4c13c", display: "inline-block",
-              boxShadow: "0 0 8px #e4c13c",
-              animation: "pulse-glow 2s ease-in-out infinite"
-            }} />
-            Available 24 / 7 | Las Vegas
-          </div>
-
-          {/* Headline */}
-          <h1 className="anim-fade-up delay-2" style={{
-            color: "#fff",
-            fontSize: "clamp(2.25rem, 6vw, 5.5rem)",
-            fontWeight: 900, lineHeight: 1.02, marginBottom: "clamp(16px, 3vw, 24px)",
-            letterSpacing: "-0.02em",
-            textShadow: "0 2px 24px rgba(0,0,0,0.5)"
-          }}>
-            Keeping Your<br />
-            <span className="hero-fleet-shimmer">Fleet Moving</span>
-          </h1>
-
-          {/* Sub-copy */}
-          <p className="anim-fade-up delay-3" style={{
-            color: "#d6d0c4", fontSize: "clamp(0.95rem, 2vw, 1.2rem)",
-            lineHeight: 1.75, marginBottom: "clamp(24px, 4vw, 36px)", maxWidth: "560px", marginLeft: "auto", marginRight: "auto",
-            textShadow: "0 1px 8px rgba(0,0,0,0.3)"
-          }}>
-            Professional roadside assistance and comprehensive fleet maintenance across Las Vegas and Southern Nevada. We minimize downtime so you can maximize delivery.
-          </p>
-
-          {/* CTAs - 3D tilt on hover */}
-          <div className="anim-fade-up delay-4" style={{ display: "flex", gap: "clamp(10px, 2vw, 14px)", flexWrap: "wrap", marginBottom: "clamp(28px, 4vw, 40px)", justifyContent: "center" }}>
+        <div className="container hero-home__grid">
+          <div className="hero-home__copy">
             <div
-              onMouseMove={handleTilt}
-              onMouseLeave={resetTilt}
-              style={{ transition: "transform 0.2s ease", transformStyle: "preserve-3d" }}
+              className="anim-fade-up delay-1 hero-home__badge"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "8px",
+                background: "rgba(228, 193, 60, 0.14)",
+                border: "1px solid rgba(228, 193, 60, 0.35)",
+                color: "#f0e6b8",
+                fontSize: "clamp(0.65rem, 1.4vw, 0.75rem)",
+                fontWeight: 700,
+                letterSpacing: "0.12em",
+                textTransform: "uppercase",
+                padding: "8px 16px",
+                borderRadius: "9999px",
+                marginBottom: "clamp(18px, 3vw, 26px)",
+              }}
             >
-              <a href="tel:+17028632706" style={{
-                display: "inline-flex", alignItems: "center", gap: "8px",
-                background: "#e4c13c", color: "#111827", padding: "clamp(12px, 2.5vw, 16px) clamp(20px, 4vw, 32px)",
-                borderRadius: "12px", fontWeight: 700, fontSize: "clamp(0.95rem, 2vw, 1.1rem)",
-                textDecoration: "none", boxShadow: "0 6px 28px rgba(228,193,60,0.4)",
-                whiteSpace: "nowrap"
-              }}>
-                <Phone size={20} /> Call (702) 863-2706
-              </a>
+              <MapPin size={14} style={{ color: "#e4c13c", flexShrink: 0 }} aria-hidden />
+              Las Vegas & Southern Nevada · 24-hour dispatch
             </div>
-            <div
-              onMouseMove={handleTilt}
-              onMouseLeave={resetTilt}
-              style={{ transition: "transform 0.2s ease", transformStyle: "preserve-3d" }}
+
+            <h1
+              className="anim-fade-up delay-2 hero-home__title"
+              style={{
+                color: "#fafaf9",
+                fontSize: "clamp(2.1rem, 4.8vw, 3.65rem)",
+                fontWeight: 800,
+                lineHeight: 1.08,
+                marginBottom: "clamp(16px, 2.5vw, 22px)",
+                letterSpacing: "-0.03em",
+                textShadow: "0 2px 32px rgba(0,0,0,0.45)",
+              }}
             >
-              <Link href="/services" style={{
-                display: "inline-flex", alignItems: "center", gap: "8px",
-                color: "#ebe6dc", padding: "clamp(12px, 2.5vw, 15px) clamp(20px, 4vw, 28px)", borderRadius: "12px",
-                fontWeight: 600, fontSize: "clamp(0.9rem, 2vw, 1.05rem)",
-                border: "1.5px solid rgba(235,230,220,0.35)", textDecoration: "none",
-                whiteSpace: "nowrap", backdropFilter: "blur(4px)",
-                background: "rgba(255,252,245,0.06)"
-              }}>
-                View Services <ArrowRight size={18} />
+              Roadside truck repair
+              <br />
+              <span className="hero-fleet-shimmer">built for downtime you can’t afford</span>
+            </h1>
+
+            <p
+              className="anim-fade-up delay-3 hero-home__lead"
+              style={{
+                color: "#c8c2b6",
+                fontSize: "clamp(1rem, 1.9vw, 1.15rem)",
+                lineHeight: 1.65,
+                marginBottom: "clamp(20px, 3vw, 28px)",
+                maxWidth: "34rem",
+                textShadow: "0 1px 12px rgba(0,0,0,0.35)",
+              }}
+            >
+              Semis, heavy-duty trucks, and trailers—we roll to you for diagnostics, tires, brakes, electrical, HVAC, and
+              urgent roadside fixes. Straight answers, careful work, and one number that actually picks up.
+            </p>
+
+            <ul className="anim-fade-up delay-3 hero-home__chips" aria-label="Service highlights">
+              {["Mobile & roadside", "Heavy-duty focus", "Fast Las Vegas response"].map((label) => (
+                <li key={label}>{label}</li>
+              ))}
+            </ul>
+
+            <div className="anim-fade-up delay-4 hero-home__ctas">
+              <div
+                onMouseMove={handleTilt}
+                onMouseLeave={resetTilt}
+                style={{ transition: "transform 0.2s ease", transformStyle: "preserve-3d" }}
+              >
+                <a
+                  href="tel:+17028632706"
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    background: "#e4c13c",
+                    color: "#111827",
+                    padding: "14px 26px",
+                    borderRadius: "12px",
+                    fontWeight: 700,
+                    fontSize: "clamp(0.95rem, 1.8vw, 1.05rem)",
+                    textDecoration: "none",
+                    boxShadow: "0 8px 32px rgba(228, 193, 60, 0.35)",
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  <Phone size={20} aria-hidden />
+                  Call (702) 863-2706
+                </a>
+              </div>
+              <div
+                onMouseMove={handleTilt}
+                onMouseLeave={resetTilt}
+                style={{ transition: "transform 0.2s ease", transformStyle: "preserve-3d" }}
+              >
+                <Link
+                  href="/services"
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    color: "#f0ebe3",
+                    padding: "13px 22px",
+                    borderRadius: "12px",
+                    fontWeight: 600,
+                    fontSize: "clamp(0.9rem, 1.7vw, 1rem)",
+                    border: "1px solid rgba(228, 193, 60, 0.28)",
+                    textDecoration: "none",
+                    background: "rgba(255, 252, 245, 0.04)",
+                    backdropFilter: "blur(8px)",
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  Browse services
+                  <ArrowRight size={18} aria-hidden />
+                </Link>
+              </div>
+              <Link
+                href="/contact-us"
+                className="hero-home__link-quiet"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  fontWeight: 600,
+                  fontSize: "0.9375rem",
+                  color: "#a8a29a",
+                  textDecoration: "none",
+                  padding: "10px 4px",
+                  borderBottom: "1px solid rgba(168, 162, 154, 0.35)",
+                }}
+              >
+                Request a callback
               </Link>
             </div>
           </div>
 
+          <div className="anim-fade-up delay-2 hero-home__visual">
+            <div className="hero-home__visual-inner">
+              <Image
+                src="/hero_truck.png"
+                alt="Las Vegas 24 Hour Roadside Truck Services semi-truck and trailer"
+                fill
+                className="hero-home__img"
+                sizes="(max-width: 900px) 92vw, 44vw"
+                priority
+              />
+            </div>
+            <p className="hero-home__caption">Road-ready crews · Same-day priority when you&apos;re stuck</p>
+          </div>
         </div>
-      </div>
       </section>
     </div>
   );

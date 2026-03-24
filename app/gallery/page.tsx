@@ -30,7 +30,7 @@ export default function GalleryPage() {
                 maxWidth: "560px",
               }}
             >
-              Our shop, team, and truck and trailer repair work across Las Vegas.
+              Truck and trailer repair work across Las Vegas and Southern Nevada.
             </p>
           </Reveal>
         </div>

@@ -1,5 +1,6 @@
 /**
  * Gallery images. Update this file when you add or replace images.
+ * Captions are omitted so photos display without overlay text.
  */
 export interface GalleryImage {
   src: string;
@@ -8,24 +9,26 @@ export interface GalleryImage {
 }
 
 export const galleryImages: GalleryImage[] = [
-  { src: "/site-gallery/shop-team-1.jpg", alt: "Las Vegas 24 Hour Roadside Truck Services", caption: "Our shop and team" },
-  { src: "/why_us_banner.jpg", alt: "Truck repair and service", caption: "Truck & trailer repair" },
-  { src: "/hero-truck-white.png", alt: "Commercial truck", caption: "Commercial truck service" },
-  { src: "/about-shop.png", alt: "Las Vegas 24 Hour Roadside Truck Services shop", caption: "Our facility" },
-  { src: "/mechanic-diagnostic-1.jpg", alt: "Engine diagnostics", caption: "Engine diagnostics" },
-  { src: "/mechanic-diagnostic-2.jpg", alt: "Mechanic at work", caption: "Diagnostics & repair" },
-  { src: "/transmission-img-1.jpg", alt: "Transmission service", caption: "Transmission repair" },
-  { src: "/transmission-img-2.jpg", alt: "Transmission work", caption: "Transmission service" },
-  { src: "/brakes-img-1.jpg", alt: "Brake service", caption: "Brake service" },
-  { src: "/brakes-img-2.jpg", alt: "Brake repair", caption: "Brake repair" },
-  { src: "/tires-img-1.jpg", alt: "Tire service", caption: "Tire repair & change" },
-  { src: "/tires-img-2.jpg", alt: "Commercial tires", caption: "Tire service" },
-  { src: "/electrical-img-1.jpg", alt: "Electrical repair", caption: "Electrical systems" },
-  { src: "/electrical-img-2.jpg", alt: "Electrical diagnostics", caption: "Electrical repair" },
-  { src: "/battery-img-1.jpg", alt: "Battery service", caption: "Battery & charging" },
-  { src: "/battery-img-2.jpg", alt: "Battery replacement", caption: "Battery service" },
-  { src: "/steering-suspension-unsplash.jpg", alt: "Steering and suspension", caption: "Steering & suspension" },
-  { src: "/Steering%20&%20Suspension%201.jpg", alt: "Suspension repair", caption: "Suspension service" },
-  { src: "/Cabin%20Filter%201.jpg", alt: "Cabin filter", caption: "Air & cabin filter" },
-  { src: "/Cabin%20Filter%202.jpg", alt: "Filter replacement", caption: "Filter service" },
+  { src: "/Truck_gal_1.jpg", alt: "Commercial truck service in Las Vegas" },
+  { src: "/truck_gal_2.jpg", alt: "Box truck maintenance in service bay" },
+  { src: "/truck_gal_3.jpg", alt: "Technician working on commercial truck wheel" },
+  { src: "/truck_gal4.webp", alt: "Semi-truck on lift in repair facility" },
+  { src: "/truck_gal_5.jpg", alt: "Brake and wheel service on commercial truck" },
+  { src: "/why_us_banner.jpg", alt: "Truck repair and service" },
+  { src: "/about-shop.png", alt: "Las Vegas 24 Hour Roadside Truck Services shop" },
+  { src: "/mechanic-diagnostic-1.jpg", alt: "Engine diagnostics" },
+  { src: "/mechanic-diagnostic-2.jpg", alt: "Mechanic at work" },
+  { src: "/transmission-img-1.jpg", alt: "Transmission service" },
+  { src: "/transmission-img-2.jpg", alt: "Transmission work" },
+  { src: "/brakes-img-2.jpg", alt: "Brake repair" },
+  { src: "/tires-img-1.jpg", alt: "Tire service" },
+  { src: "/tires-img-2.jpg", alt: "Commercial tires" },
+  { src: "/electrical-img-1.jpg", alt: "Electrical repair" },
+  { src: "/electrical-img-2.jpg", alt: "Electrical diagnostics" },
+  { src: "/battery-img-1.jpg", alt: "Battery service" },
+  { src: "/battery-img-2.jpg", alt: "Battery replacement" },
+  { src: "/steering-suspension-unsplash.jpg", alt: "Steering and suspension" },
+  { src: "/Steering%20&%20Suspension%201.jpg", alt: "Suspension repair" },
+  { src: "/Cabin%20Filter%201.jpg", alt: "Cabin filter" },
+  { src: "/Cabin%20Filter%202.jpg", alt: "Filter replacement" },
 ];
