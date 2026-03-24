@@ -18,10 +18,10 @@ export default function BrandsSlider() {
   return (
     <section
       style={{
-        background: "#fff",
+        background: "#0a0a0a",
         padding: "48px 0",
-        borderTop: "1px solid #E5E9EF",
-        borderBottom: "1px solid #E5E9EF",
+        borderTop: "1px solid #2A2A2A",
+        borderBottom: "1px solid #2A2A2A",
         overflow: "hidden",
       }}
     >
@@ -32,7 +32,7 @@ export default function BrandsSlider() {
             fontWeight: 700,
             letterSpacing: "0.12em",
             textTransform: "uppercase",
-            color: "#6B7280",
+            color: "#D1D5DB",
             textAlign: "center",
           }}
         >

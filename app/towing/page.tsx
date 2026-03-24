@@ -44,10 +44,10 @@ export default function TowingHubPage() {
                     alignItems: "center",
                     justifyContent: "space-between",
                     padding: "14px 18px",
-                    background: "#F8F9FB",
+                    background: "#0a0a0a",
                     borderRadius: "12px",
-                    border: "1px solid #E5E9EF",
-                    color: "#1E293B",
+                    border: "1px solid #2A2A2A",
+                    color: "#111827",
                     fontWeight: 600,
                     textDecoration: "none",
                   }}

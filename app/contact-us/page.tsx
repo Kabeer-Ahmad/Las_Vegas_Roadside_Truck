@@ -41,21 +41,21 @@ export default function ContactPage() {
         <div className="container">
           <div className="page-hero__breadcrumb">
             <Link href="/">Home</Link> <span>/</span>
-            <span style={{ color: "#CBD5E1" }}>Contact Us</span>
+            <span style={{ color: "#D1D5DB" }}>Contact Us</span>
           </div>
           <h1 style={{ color: "#fff", marginBottom: "12px" }}>We Would Love to Hear From You</h1>
-          <p style={{ color: "#CBD5E1", fontSize: "1.05rem", lineHeight: 1.7, maxWidth: "520px" }}>
+          <p style={{ color: "#D1D5DB", fontSize: "1.05rem", lineHeight: 1.7, maxWidth: "520px" }}>
             Have a question or need our service? We&apos;re just a call or message away. Our team responds fast.
           </p>
         </div>
       </section>
 
       {/* Emergency Strip */}
-      <div style={{ background: "#DC2626", padding: "14px 0" }}>
+      <div style={{ background: "#e4c13c", padding: "14px 0" }}>
         <div className="container" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "12px", flexWrap: "wrap" }}>
-          <AlertTriangle size={18} color="#fff" />
-          <span style={{ color: "#fff", fontWeight: 700, fontSize: "0.9rem" }}>In an urgent situation?</span>
-          <a href="tel:+17028632706" style={{ color: "#fff", fontWeight: 800, textDecoration: "none", fontSize: "0.95rem", border: "1.5px solid rgba(255,255,255,0.5)", padding: "4px 14px", borderRadius: "9999px" }}>
+          <AlertTriangle size={18} color="#111827" />
+          <span style={{ color: "#111827", fontWeight: 700, fontSize: "0.9rem" }}>In an urgent situation?</span>
+          <a href="tel:+17028632706" style={{ color: "#111827", fontWeight: 800, textDecoration: "none", fontSize: "0.95rem", border: "1.5px solid rgba(17,24,39,0.45)", padding: "4px 14px", borderRadius: "9999px" }}>
             Please call: (702) 863-2706
           </a>
         </div>
@@ -82,21 +82,21 @@ export default function ContactPage() {
                 <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "18px" }}>
                   <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "18px" }}>
                     <div>
-                      <label style={{ display: "block", fontSize: "0.875rem", fontWeight: 600, color: "#374151", marginBottom: "6px" }}>Full Name *</label>
-                      <input required type="text" placeholder="John Smith" style={{ width: "100%", padding: "11px 14px", border: "1.5px solid #E5E9EF", borderRadius: "8px", fontSize: "0.95rem", outline: "none", transition: "border 0.2s", color: "#111827" }} onFocus={(e) => e.currentTarget.style.borderColor = "#e4c13c"} onBlur={(e) => e.currentTarget.style.borderColor = "#E5E9EF"} />
+                      <label style={{ display: "block", fontSize: "0.875rem", fontWeight: 600, color: "#F3F4F6", marginBottom: "6px" }}>Full Name *</label>
+                      <input required type="text" placeholder="John Smith" style={{ width: "100%", padding: "11px 14px", border: "1.5px solid #3A3A3A", borderRadius: "8px", fontSize: "0.95rem", outline: "none", transition: "border 0.2s", color: "#F3F4F6", background: "#0a0a0a" }} onFocus={(e) => e.currentTarget.style.borderColor = "#e4c13c"} onBlur={(e) => e.currentTarget.style.borderColor = "#3A3A3A"} />
                     </div>
                     <div>
-                      <label style={{ display: "block", fontSize: "0.875rem", fontWeight: 600, color: "#374151", marginBottom: "6px" }}>Phone Number *</label>
-                      <input required type="tel" placeholder="(555) 000-0000" style={{ width: "100%", padding: "11px 14px", border: "1.5px solid #E5E9EF", borderRadius: "8px", fontSize: "0.95rem", outline: "none", color: "#111827" }} onFocus={(e) => e.currentTarget.style.borderColor = "#e4c13c"} onBlur={(e) => e.currentTarget.style.borderColor = "#E5E9EF"} />
+                      <label style={{ display: "block", fontSize: "0.875rem", fontWeight: 600, color: "#F3F4F6", marginBottom: "6px" }}>Phone Number *</label>
+                      <input required type="tel" placeholder="(555) 000-0000" style={{ width: "100%", padding: "11px 14px", border: "1.5px solid #3A3A3A", borderRadius: "8px", fontSize: "0.95rem", outline: "none", color: "#F3F4F6", background: "#0a0a0a" }} onFocus={(e) => e.currentTarget.style.borderColor = "#e4c13c"} onBlur={(e) => e.currentTarget.style.borderColor = "#3A3A3A"} />
                     </div>
                   </div>
                   <div>
-                    <label style={{ display: "block", fontSize: "0.875rem", fontWeight: 600, color: "#374151", marginBottom: "6px" }}>Email Address</label>
-                    <input type="email" placeholder="you@company.com" style={{ width: "100%", padding: "11px 14px", border: "1.5px solid #E5E9EF", borderRadius: "8px", fontSize: "0.95rem", outline: "none", color: "#111827" }} onFocus={(e) => e.currentTarget.style.borderColor = "#e4c13c"} onBlur={(e) => e.currentTarget.style.borderColor = "#E5E9EF"} />
+                    <label style={{ display: "block", fontSize: "0.875rem", fontWeight: 600, color: "#F3F4F6", marginBottom: "6px" }}>Email Address</label>
+                    <input type="email" placeholder="you@company.com" style={{ width: "100%", padding: "11px 14px", border: "1.5px solid #3A3A3A", borderRadius: "8px", fontSize: "0.95rem", outline: "none", color: "#F3F4F6", background: "#0a0a0a" }} onFocus={(e) => e.currentTarget.style.borderColor = "#e4c13c"} onBlur={(e) => e.currentTarget.style.borderColor = "#3A3A3A"} />
                   </div>
                   <div>
-                    <label style={{ display: "block", fontSize: "0.875rem", fontWeight: 600, color: "#374151", marginBottom: "6px" }}>Service Needed</label>
-                    <select style={{ width: "100%", padding: "11px 14px", border: "1.5px solid #E5E9EF", borderRadius: "8px", fontSize: "0.95rem", outline: "none", color: "#374151", background: "#fff" }}>
+                    <label style={{ display: "block", fontSize: "0.875rem", fontWeight: 600, color: "#F3F4F6", marginBottom: "6px" }}>Service Needed</label>
+                    <select style={{ width: "100%", padding: "11px 14px", border: "1.5px solid #3A3A3A", borderRadius: "8px", fontSize: "0.95rem", outline: "none", color: "#F3F4F6", background: "#0a0a0a" }}>
                       <option value="">Select a service...</option>
                       <option>DPF Cleaning / Force Regen</option>
                       <option>Engine Diagnostics & Repair</option>
@@ -113,8 +113,8 @@ export default function ContactPage() {
                     </select>
                   </div>
                   <div>
-                    <label style={{ display: "block", fontSize: "0.875rem", fontWeight: 600, color: "#374151", marginBottom: "6px" }}>Message *</label>
-                    <textarea required rows={5} placeholder="Describe your issue or what service you need..." style={{ width: "100%", padding: "11px 14px", border: "1.5px solid #E5E9EF", borderRadius: "8px", fontSize: "0.95rem", outline: "none", color: "#111827", resize: "vertical", fontFamily: "Inter, sans-serif" }} onFocus={(e) => e.currentTarget.style.borderColor = "#e4c13c"} onBlur={(e) => e.currentTarget.style.borderColor = "#E5E9EF"} />
+                    <label style={{ display: "block", fontSize: "0.875rem", fontWeight: 600, color: "#F3F4F6", marginBottom: "6px" }}>Message *</label>
+                    <textarea required rows={5} placeholder="Describe your issue or what service you need..." style={{ width: "100%", padding: "11px 14px", border: "1.5px solid #3A3A3A", borderRadius: "8px", fontSize: "0.95rem", outline: "none", color: "#F3F4F6", background: "#0a0a0a", resize: "vertical", fontFamily: "Inter, sans-serif" }} onFocus={(e) => e.currentTarget.style.borderColor = "#e4c13c"} onBlur={(e) => e.currentTarget.style.borderColor = "#3A3A3A"} />
                   </div>
                   <button type="submit" style={{ background: "#e4c13c", color: "#111827", padding: "14px 28px", borderRadius: "10px", fontWeight: 700, fontSize: "1rem", border: "none", cursor: "pointer", transition: "all 0.2s", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px" }}
                     onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "#c4a82f"; }}
@@ -128,27 +128,27 @@ export default function ContactPage() {
 
             {/* Info Sidebar */}
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-              <div style={{ background: "#F8F9FB", border: "1px solid #E5E9EF", borderRadius: "14px", padding: "24px" }}>
+              <div style={{ background: "#0a0a0a", border: "1px solid #2A2A2A", borderRadius: "14px", padding: "24px" }}>
                 <h4 style={{ marginBottom: "20px" }}>How to Reach Us</h4>
                 {contactRows.map((item, i) => (
-                  <div key={i} style={{ display: "flex", gap: "12px", alignItems: "flex-start", marginBottom: "18px", paddingBottom: "18px", borderBottom: i < contactRows.length - 1 ? "1px solid #E5E9EF" : "none" }}>
+                  <div key={i} style={{ display: "flex", gap: "12px", alignItems: "flex-start", marginBottom: "18px", paddingBottom: "18px", borderBottom: i < contactRows.length - 1 ? "1px solid #2A2A2A" : "none" }}>
                     <div style={{ marginTop: "2px", flexShrink: 0 }}>{item.icon}</div>
                     <div>
                       <div style={{ fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", color: "#9CA3AF", marginBottom: "4px" }}>{item.label}</div>
                       {item.href ? (
-                        <a href={item.href} style={{ fontSize: "0.9rem", color: "#111827", fontWeight: 600, textDecoration: "none" }}>{item.value}</a>
+                        <a href={item.href} style={{ fontSize: "0.9rem", color: "#F3F4F6", fontWeight: 600, textDecoration: "none" }}>{item.value}</a>
                       ) : (
-                        <div style={{ fontSize: "0.9rem", color: "#111827", fontWeight: 500, whiteSpace: "pre-line" }}>{item.value}</div>
+                        <div style={{ fontSize: "0.9rem", color: "#F3F4F6", fontWeight: 500, whiteSpace: "pre-line" }}>{item.value}</div>
                       )}
                     </div>
                   </div>
                 ))}
               </div>
 
-              <div style={{ background: "#0F172A", borderRadius: "14px", padding: "24px", textAlign: "center" }}>
+              <div style={{ background: "#0a0a0a", borderRadius: "14px", padding: "24px", textAlign: "center" }}>
                 <div style={{ fontSize: "2rem", marginBottom: "8px" }}>⚡</div>
                 <h4 style={{ color: "#fff", marginBottom: "8px", fontSize: "1rem" }}>Emergency? Call Now</h4>
-                <p style={{ fontSize: "0.85rem", color: "#94A3B8", marginBottom: "16px" }}>Roadside assistance dispatched within 60 min</p>
+                <p style={{ fontSize: "0.85rem", color: "#9CA3AF", marginBottom: "16px" }}>Roadside assistance dispatched within 60 min</p>
                 <a href="tel:+17028632706" style={{ display: "block", background: "#e4c13c", color: "#111827", padding: "12px", borderRadius: "10px", fontWeight: 700, textDecoration: "none", fontSize: "1rem" }}>
                   (702) 863-2706
                 </a>

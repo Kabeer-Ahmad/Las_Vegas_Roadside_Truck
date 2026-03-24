@@ -4,7 +4,7 @@ import { useRef, useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const AVATAR_COLORS = [
-  "#e4c13c", "#059669", "#D97706", "#7C3AED", "#DC2626",
+  "#e4c13c", "#059669", "#D97706", "#7C3AED", "#FACC15",
   "#0891B2", "#4F46E5", "#EA580C", "#16A34A", "#9333EA",
   "#0D9488", "#C026D3", "#CA8A04",
 ];
@@ -99,7 +99,7 @@ export default function TestimonialsSlider({ testimonials }: { testimonials: Tes
           return (
             <div key={i} className="testimonial-card tilt-card testimonials-slider-card" style={{ width: cardWidth }}>
               <div className="star-row" style={{ color: "#F59E0B", fontSize: "0.95rem", letterSpacing: "1px" }}>{'★'.repeat(t.stars)}</div>
-              <p className="testimonial-text" style={{ flex: 1, margin: 0, fontSize: "0.95rem", lineHeight: 1.7, color: "#374151" }}>&quot;{t.text}&quot;</p>
+              <p className="testimonial-text" style={{ flex: 1, margin: 0, fontSize: "0.95rem", lineHeight: 1.7, color: "#F3F4F6" }}>&quot;{t.text}&quot;</p>
               <div style={{ display: "flex", alignItems: "center", gap: "14px", marginTop: "auto", paddingTop: "8px", borderTop: "1px solid #F1F4F8" }}>
                 <div style={{
                   width: "44px", height: "44px", borderRadius: "50%", background: avatarColor,
@@ -109,8 +109,8 @@ export default function TestimonialsSlider({ testimonials }: { testimonials: Tes
                   {initials}
                 </div>
                 <div>
-                  <div className="testimonial-author" style={{ fontWeight: 700, color: "#111827", fontSize: "0.95rem" }}>{t.name}</div>
-                  <div className="testimonial-badge" style={{ fontSize: "0.75rem", color: "#6B7280", marginTop: "2px" }}>✓ Verified Google Review</div>
+                  <div className="testimonial-author" style={{ fontWeight: 700, color: "#F3F4F6", fontSize: "0.95rem" }}>{t.name}</div>
+                  <div className="testimonial-badge" style={{ fontSize: "0.75rem", color: "#D1D5DB", marginTop: "2px" }}>✓ Verified Google Review</div>
                 </div>
               </div>
             </div>
@@ -166,8 +166,8 @@ export default function TestimonialsSlider({ testimonials }: { testimonials: Tes
           height: 48px;
           border-radius: 50%;
           border: 1.5px solid #E5E9EF;
-          background: #fff;
-          color: #374151;
+          background: #0a0a0a;
+          color: #d1d5db;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -177,7 +177,7 @@ export default function TestimonialsSlider({ testimonials }: { testimonials: Tes
         }
         .testimonials-slider-btn:hover:not(:disabled) {
           background: #e4c13c;
-          color: #fff;
+          color: #f9fafb;
           border-color: #e4c13c;
           transform: scale(1.05);
         }

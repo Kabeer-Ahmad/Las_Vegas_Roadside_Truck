@@ -33,23 +33,6 @@ export const serviceMenuGroups: ServiceNavGroup[] = [
     ],
   },
   {
-    id: "towing",
-    title: "Towing",
-    href: "/towing",
-    items: [
-      { label: "Emergency Towing", href: "/towing/emergency-towing" },
-      { label: "Heavy Duty Towing", href: "/towing/heavy-duty-towing" },
-      { label: "Light Duty Towing", href: "/towing/light-duty-towing" },
-      { label: "Semi Truck Towing", href: "/towing/semi-truck-towing" },
-      { label: "Flatbed Towing", href: "/towing/flatbed-towing" },
-      { label: "Roadside Assistance", href: "/towing/roadside-assistance" },
-      { label: "Fuel Delivery", href: "/towing/fuel-delivery" },
-      { label: "Tire Change Service", href: "/towing/tire-change-service" },
-      { label: "Jump Start Service", href: "/towing/jump-start-service" },
-      { label: "Vehicle Lockout Service", href: "/towing/vehicle-lockout-service" },
-    ],
-  },
-  {
     id: "roadside",
     title: "Emergency Roadside",
     href: "/services",

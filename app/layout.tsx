@@ -80,7 +80,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>
+      <body suppressHydrationWarning>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-W1QFFRDTDP"
           strategy="afterInteractive"

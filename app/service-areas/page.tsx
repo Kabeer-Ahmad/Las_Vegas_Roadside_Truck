@@ -59,8 +59,8 @@ export default function ServiceAreasPage() {
             <Link href="/" style={{ color: "#f5e6a8", textDecoration: "none" }}>
               Home
             </Link>{" "}
-            <span style={{ color: "#475569" }}>/</span>
-            <span style={{ color: "#CBD5E1" }}>Service Areas</span>
+            <span style={{ color: "#D1D5DB" }}>/</span>
+            <span style={{ color: "#D1D5DB" }}>Service Areas</span>
           </div>
           <div style={{ maxWidth: "680px" }}>
             <h1
@@ -79,7 +79,7 @@ export default function ServiceAreasPage() {
             <p
               className="anim-fade-up delay-2"
               style={{
-                color: "#CBD5E1",
+                color: "#D1D5DB",
                 fontSize: "clamp(1rem, 2vw, 1.15rem)",
                 lineHeight: 1.7,
                 marginBottom: "36px",
@@ -149,8 +149,8 @@ export default function ServiceAreasPage() {
                   href={`/service-areas/${area.slug}`}
                   className="tilt-card"
                   style={{
-                    background: "#fff",
-                    border: "1px solid #E5E9EF",
+                    background: "#0a0a0a",
+                    border: "1px solid #2A2A2A",
                     borderRadius: "14px",
                     padding: "26px",
                     display: "block",
@@ -185,14 +185,14 @@ export default function ServiceAreasPage() {
                       <h4
                         style={{
                           fontSize: "1.05rem",
-                          color: "#111827",
+                          color: "#F3F4F6",
                           margin: 0,
                           fontWeight: 700,
                         }}
                       >
                         {area.city}
                       </h4>
-                      <span style={{ fontSize: "0.8rem", color: "#64748B" }}>
+                      <span style={{ fontSize: "0.8rem", color: "#D1D5DB" }}>
                         {area.region}
                       </span>
                     </div>
@@ -209,13 +209,13 @@ export default function ServiceAreasPage() {
                       <span
                         key={h}
                         style={{
-                          background: "#F8F9FB",
-                          color: "#475569",
+                          background: "#0a0a0a",
+                          color: "#D1D5DB",
                           fontSize: "0.75rem",
                           fontWeight: 600,
                           padding: "4px 10px",
                           borderRadius: "6px",
-                          border: "1px solid #E5E9EF",
+                          border: "1px solid #2A2A2A",
                         }}
                       >
                         {h}
@@ -244,7 +244,7 @@ export default function ServiceAreasPage() {
       {/* ── Not Listed CTA (Animated) ── */}
       <section
         style={{
-          background: "#1E293B",
+          background: "#111827",
           padding: "80px 0",
           color: "#fff",
           position: "relative",
@@ -288,7 +288,7 @@ export default function ServiceAreasPage() {
                 marginBottom: "32px",
                 maxWidth: "520px",
                 margin: "0 auto 32px",
-                color: "#94A3B8",
+                color: "#9CA3AF",
                 fontSize: "1.1rem",
               }}
             >

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Phone, ArrowRight, CheckCircle } from "lucide-react";
+import { Phone, ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
   /* 3D tilt on CTA button hover */
@@ -16,19 +16,12 @@ export default function HeroSection() {
     e.currentTarget.style.transform = "perspective(600px) rotateY(0) rotateX(0) scale(1)";
   };
 
-  const trustBadges = [
-    { label: "Since 2013" },
-    { label: "All Brands Serviced" },
-    { label: "Fully Mobile" },
-    { label: "DOT Compliant" },
-  ];
-
   return (
     <div className="hero-outer" style={{ width: "100%", position: "relative", backgroundColor: "#141210" }}>
       <section
         className="hero-section-main"
         style={{
-          position: "relative", width: "100%", height: "100svh", minHeight: "500px",
+          position: "relative", width: "100%", height: "78svh", minHeight: "440px",
           display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden"
         }}
       >
@@ -123,8 +116,8 @@ export default function HeroSection() {
           }}>
             <span style={{
               width: 8, height: 8, borderRadius: "50%",
-              background: "#EF4444", display: "inline-block",
-              boxShadow: "0 0 8px #EF4444",
+              background: "#e4c13c", display: "inline-block",
+              boxShadow: "0 0 8px #e4c13c",
               animation: "pulse-glow 2s ease-in-out infinite"
             }} />
             Available 24 / 7 | Las Vegas
@@ -160,9 +153,9 @@ export default function HeroSection() {
             >
               <a href="tel:+17028632706" style={{
                 display: "inline-flex", alignItems: "center", gap: "8px",
-                background: "#DC2626", color: "#fff", padding: "clamp(12px, 2.5vw, 16px) clamp(20px, 4vw, 32px)",
+                background: "#e4c13c", color: "#111827", padding: "clamp(12px, 2.5vw, 16px) clamp(20px, 4vw, 32px)",
                 borderRadius: "12px", fontWeight: 700, fontSize: "clamp(0.95rem, 2vw, 1.1rem)",
-                textDecoration: "none", boxShadow: "0 6px 28px rgba(220,38,38,0.4)",
+                textDecoration: "none", boxShadow: "0 6px 28px rgba(228,193,60,0.4)",
                 whiteSpace: "nowrap"
               }}>
                 <Phone size={20} /> Call (702) 863-2706
@@ -186,18 +179,6 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Trust badges */}
-          <div className="anim-fade-up delay-5" style={{ display: "flex", gap: "clamp(12px, 2vw, 22px)", flexWrap: "wrap", justifyContent: "center" }}>
-            {trustBadges.map((b, i) => (
-              <div key={b.label} style={{
-                display: "flex", alignItems: "center", gap: "7px",
-                color: "#9c958a", fontSize: "clamp(0.8rem, 1.5vw, 0.9rem)",
-                animation: `fadeUp 0.6s ${0.6 + i * 0.1}s both ease`
-              }}>
-                <CheckCircle size={16} color="#EF4444" /> {b.label}
-              </div>
-            ))}
-          </div>
         </div>
       </div>
       </section>

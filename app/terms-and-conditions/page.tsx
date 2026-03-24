@@ -18,10 +18,10 @@ export default function TermsPage() {
         <div className="container">
           <div className="page-hero__breadcrumb">
             <Link href="/">Home</Link> <span>/</span>
-            <span style={{ color: "#CBD5E1" }}>Terms & Conditions</span>
+            <span style={{ color: "#D1D5DB" }}>Terms & Conditions</span>
           </div>
           <h1 style={{ color: "#fff", marginBottom: "12px" }}>Terms & Conditions</h1>
-          <p style={{ color: "#94A3B8" }}>Last updated: January 1, 2025</p>
+          <p style={{ color: "#9CA3AF" }}>Last updated: January 1, 2025</p>
         </div>
       </section>
 
@@ -73,9 +73,9 @@ export default function TermsPage() {
               <div key={section.title}>
                 <h3 style={{ marginBottom: "12px", color: "#111827" }}>{section.title}</h3>
                 {section.body.split("\n").map((para, i) => (
-                  para.trim() ? <p key={i} style={{ color: "#374151", lineHeight: 1.8, marginBottom: "8px" }}>{para}</p> : null
+                  para.trim() ? <p key={i} style={{ color: "#F3F4F6", lineHeight: 1.8, marginBottom: "8px" }}>{para}</p> : null
                 ))}
-                <div style={{ height: "1px", background: "#F1F4F8", marginTop: "24px" }} />
+                <div style={{ height: "1px", background: "#0a0a0a", marginTop: "24px" }} />
               </div>
             ))}
           </div>

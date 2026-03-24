@@ -47,7 +47,7 @@ function GoogleLogoIcon({ size = 24 }: { size?: number }) {
 }
 
 const AVATAR_COLORS = [
-  "#e4c13c", "#059669", "#D97706", "#7C3AED", "#DC2626",
+  "#e4c13c", "#059669", "#D97706", "#7C3AED", "#FACC15",
   "#0891B2", "#4F46E5", "#EA580C", "#16A34A", "#9333EA",
   "#0D9488", "#C026D3", "#CA8A04",
 ];
@@ -66,7 +66,7 @@ export default function ReviewsPage() {
           <Reveal type="left">
             <div className="page-hero__breadcrumb">
               <Link href="/">Home</Link> <span>/</span>
-              <span style={{ color: "#CBD5E1" }}>Reviews</span>
+              <span style={{ color: "#D1D5DB" }}>Reviews</span>
             </div>
           </Reveal>
           <Reveal type="up" delay={100}>
@@ -77,7 +77,7 @@ export default function ReviewsPage() {
           <Reveal type="right" delay={200}>
             <p
               style={{
-                color: "#CBD5E1",
+                color: "#D1D5DB",
                 fontSize: "1.05rem",
                 lineHeight: 1.7,
                 maxWidth: "560px",
@@ -107,15 +107,15 @@ export default function ReviewsPage() {
                   display: "inline-flex",
                   alignItems: "center",
                   gap: "10px",
-                  background: "#F8F9FB",
-                  border: "1px solid #E5E9EF",
+                  background: "#0a0a0a",
+                  border: "1px solid #2A2A2A",
                   borderRadius: "9999px",
                   padding: "10px 20px",
                 }}
               >
                 <span style={{ color: "#F59E0B", fontSize: "0.95rem" }}>★★★★★</span>
-                <span style={{ fontSize: "0.8rem", fontWeight: 700, color: "#111827" }}>EXCELLENT</span>
-                <span style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "0.8rem", color: "#6B7280" }}>
+                <span style={{ fontSize: "0.8rem", fontWeight: 700, color: "#e4c13c" }}>EXCELLENT</span>
+                <span style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "0.8rem", color: "#D1D5DB" }}>
                   <GoogleLogoIcon size={18} />
                   Based on 100+ Google reviews
                 </span>
@@ -130,30 +130,30 @@ export default function ReviewsPage() {
                   justifyContent: "center",
                   gap: "10px",
                   padding: "14px 24px",
-                  background: "#fff",
-                  color: "#111827",
+                  background: "#0a0a0a",
+                  color: "#F3F4F6",
                   fontWeight: 700,
                   fontSize: "0.95rem",
                   borderRadius: "12px",
                   textDecoration: "none",
-                  border: "2px solid #E5E9EF",
+                  border: "2px solid #2A2A2A",
                   boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
                   transition: "border-color 0.2s, background 0.2s, box-shadow 0.2s",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = "#4285F4";
-                  e.currentTarget.style.background = "#F8FAFC";
+                  e.currentTarget.style.borderColor = "#e4c13c";
+                  e.currentTarget.style.background = "#121212";
                   e.currentTarget.style.boxShadow = "0 4px 12px rgba(0,0,0,0.08)";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = "#E5E9EF";
-                  e.currentTarget.style.background = "#fff";
+                  e.currentTarget.style.borderColor = "#2A2A2A";
+                  e.currentTarget.style.background = "#0a0a0a";
                   e.currentTarget.style.boxShadow = "0 2px 8px rgba(0,0,0,0.06)";
                 }}
               >
                 <GoogleLogoIcon size={24} />
                 Write a review on Google
-                <ExternalLink size={16} style={{ color: "#6B7280" }} />
+                <ExternalLink size={16} style={{ color: "#D1D5DB" }} />
               </a>
               <a
                 href={GOOGLE_REVIEWS_URL}
@@ -215,8 +215,8 @@ export default function ReviewsPage() {
                 <div
                   className="review-card"
                   style={{
-                    background: "#fff",
-                    border: "1px solid #E5E9EF",
+                    background: "#0a0a0a",
+                    border: "1px solid #2A2A2A",
                     borderRadius: "16px",
                     padding: "24px",
                     height: "100%",
@@ -236,7 +236,7 @@ export default function ReviewsPage() {
                   <p
                     style={{
                       fontSize: "0.95rem",
-                      color: "#374151",
+                      color: "#F3F4F6",
                       lineHeight: 1.65,
                       flex: 1,
                       marginBottom: "16px",
@@ -263,11 +263,11 @@ export default function ReviewsPage() {
                       {getInitials(review.author)}
                     </div>
                     <div>
-                      <span style={{ fontWeight: 700, color: "#111827", fontSize: "0.9rem", display: "block" }}>
+                      <span style={{ fontWeight: 700, color: "#F3F4F6", fontSize: "0.9rem", display: "block" }}>
                         {review.author}
                       </span>
                       {review.date && (
-                        <span style={{ color: "#94A3B8", fontSize: "0.85rem" }}>
+                        <span style={{ color: "#9CA3AF", fontSize: "0.85rem" }}>
                           {review.date}
                         </span>
                       )}
@@ -283,7 +283,7 @@ export default function ReviewsPage() {
       <style>{`
         .review-card:hover {
           box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
-          border-color: #CBD5E1;
+          border-color: #e4c13c;
         }
       `}</style>
     </>

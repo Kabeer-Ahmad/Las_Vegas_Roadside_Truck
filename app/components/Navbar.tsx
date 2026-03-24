@@ -100,7 +100,7 @@ export default function Navbar() {
                             onClick={() => setServicesOpen(false)}
                             style={{ fontWeight: 700, color: "var(--blue-600)", fontSize: "0.85rem" }}
                           >
-                            {group.id === "towing" ? "Towing hub" : "All services"} →
+                            All services →
                           </Link>
                           {group.items.map((s) => (
                             <Link key={s.href} href={s.href} onClick={() => setServicesOpen(false)}>
@@ -258,7 +258,7 @@ export default function Navbar() {
                         className="nav-mobile-link"
                         style={{ paddingLeft: 20, fontWeight: 600, color: "var(--blue-600)", fontSize: "0.9rem" }}
                       >
-                        {group.id === "towing" ? "Towing hub" : "Section overview"} →
+                        Section overview →
                       </Link>
                       {group.items.map((s) => (
                         <Link

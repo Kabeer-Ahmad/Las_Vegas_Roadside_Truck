@@ -96,8 +96,8 @@ function StatCard({
         display: "flex",
         alignItems: "center",
         gap: "18px",
-        background: "#fff",
-        border: "1px solid #E5E9EF",
+        background: "#0a0a0a",
+        border: "1px solid #2A2A2A",
         borderRadius: "16px",
         boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
         cursor: "default",
@@ -145,7 +145,7 @@ function StatCard({
           style={{
             fontSize: "1.25rem",
             fontWeight: 800,
-            color: "#111827",
+            color: "#e4c13c",
             lineHeight: 1.1,
             letterSpacing: "-0.02em",
           }}
@@ -159,7 +159,7 @@ function StatCard({
           style={{
             fontSize: "0.8rem",
             fontWeight: 700,
-            color: "#374151",
+            color: "#F3F4F6",
             marginTop: "4px",
           }}
           initial={isSlider ? false : { opacity: 0 }}
@@ -229,7 +229,7 @@ export default function StatsBar() {
   }, [isMobile]);
 
   return (
-    <section className="stats-section" style={{ background: "#fff", padding: "80px 0 60px" }}>
+    <section className="stats-section" style={{ background: "#0a0a0a", padding: "80px 0 60px" }}>
       <div className="container">
         <h2
           className="stats-section-heading"
@@ -238,7 +238,7 @@ export default function StatsBar() {
             fontWeight: 600,
             letterSpacing: "0.12em",
             textTransform: "uppercase",
-            color: "#6B7280",
+            color: "#D1D5DB",
             textAlign: "center",
             marginBottom: "28px",
           }}

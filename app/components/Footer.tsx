@@ -13,7 +13,6 @@ const serviceLinks = [
   { label: "Transmission", href: "/transmission" },
   { label: "Trailer Repair", href: "/trailer-repair" },
   { label: "Emergency Roadside", href: "/emergency-roadside-repair" },
-  { label: "Towing (Las Vegas, NV)", href: "/towing" },
 ];
 
 const companyLinks = [
@@ -28,7 +27,7 @@ const companyLinks = [
 
 export default function Footer() {
   return (
-    <footer className="site-footer" style={{ background: "#F1F4F8", borderTop: "1px solid #E5E9EF" }}>
+    <footer className="site-footer" style={{ background: "#0a0a0a", borderTop: "1px solid #2A2A2A" }}>
       <div className="container" style={{ paddingTop: "48px", paddingBottom: "48px" }}>
         <div className="footer-grid" style={{ display: "grid", gridTemplateColumns: "1.5fr 1fr 1fr", gap: "40px" }}>
 
@@ -43,13 +42,13 @@ export default function Footer() {
                 style={{ objectFit: "contain", height: "100px", width: "auto" }}
               />
             </Link>
-            <p style={{ fontSize: "0.9rem", color: "#6B7280", lineHeight: 1.7, marginBottom: "20px", maxWidth: "280px" }}>
+            <p style={{ fontSize: "0.9rem", color: "#D1D5DB", lineHeight: 1.7, marginBottom: "20px", maxWidth: "280px" }}>
               Since 2013, providing trusted truck and trailer repair services with a focus on reliability, speed, and customer care.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
               <div style={{ display: "flex", gap: "12px", alignItems: "center" }}>
                 <div style={{ color: "#e4c13c", flexShrink: 0 }}><Phone size={16} /></div>
-                <a href="tel:+17028632706" style={{ fontSize: "0.875rem", color: "#6B7280", textDecoration: "none", fontWeight: 600, transition: "color 0.15s" }}
+                <a href="tel:+17028632706" style={{ fontSize: "0.875rem", color: "#D1D5DB", textDecoration: "none", fontWeight: 600, transition: "color 0.15s" }}
                   onMouseEnter={(e) => { e.currentTarget.style.color = "#e4c13c"; }}
                   onMouseLeave={(e) => { e.currentTarget.style.color = "#6B7280"; }}
                 >(702) 863-2706</a>
@@ -57,7 +56,7 @@ export default function Footer() {
               {CONTACT_EMAIL ? (
                 <div style={{ display: "flex", gap: "12px", alignItems: "center" }}>
                   <div style={{ color: "#e4c13c", flexShrink: 0 }}><Mail size={16} /></div>
-                  <a href={`mailto:${CONTACT_EMAIL}`} style={{ fontSize: "0.875rem", color: "#6B7280", textDecoration: "none" }}>{CONTACT_EMAIL}</a>
+                  <a href={`mailto:${CONTACT_EMAIL}`} style={{ fontSize: "0.875rem", color: "#D1D5DB", textDecoration: "none" }}>{CONTACT_EMAIL}</a>
                 </div>
               ) : null}
             </div>
@@ -69,7 +68,7 @@ export default function Footer() {
             <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "10px" }}>
               {serviceLinks.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} style={{ fontSize: "0.875rem", color: "#6B7280", textDecoration: "none", transition: "color 0.15s" }}
+                  <Link href={l.href} style={{ fontSize: "0.875rem", color: "#D1D5DB", textDecoration: "none", transition: "color 0.15s" }}
                     onMouseEnter={(e) => { e.currentTarget.style.color = "#e4c13c"; }}
                     onMouseLeave={(e) => { e.currentTarget.style.color = "#6B7280"; }}
                   >{l.label}</Link>
@@ -84,7 +83,7 @@ export default function Footer() {
             <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "10px" }}>
               {companyLinks.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} style={{ fontSize: "0.875rem", color: "#6B7280", textDecoration: "none", transition: "color 0.15s" }}
+                  <Link href={l.href} style={{ fontSize: "0.875rem", color: "#D1D5DB", textDecoration: "none", transition: "color 0.15s" }}
                     onMouseEnter={(e) => { e.currentTarget.style.color = "#e4c13c"; }}
                     onMouseLeave={(e) => { e.currentTarget.style.color = "#6B7280"; }}
                   >{l.label}</Link>
@@ -96,7 +95,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="footer-bottom-bar" style={{ borderTop: "1px solid #E5E9EF", padding: "20px 0" }}>
+      <div className="footer-bottom-bar" style={{ borderTop: "1px solid #2A2A2A", padding: "20px 0" }}>
         <div className="container footer-bottom" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "12px" }}>
           <p style={{ fontSize: "0.8rem", color: "#9CA3AF", margin: 0 }}>© 2025 Las Vegas 24 Hour Roadside Truck Services. All rights reserved.</p>
           <div className="footer-bottom-links" style={{ display: "flex", gap: "20px" }}>

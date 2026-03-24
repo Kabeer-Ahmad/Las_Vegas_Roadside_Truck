@@ -43,7 +43,7 @@ export default function FAQPage() {
           <Reveal type="left" delay={0} duration={0.35} rootMargin="0px 0px 60px 0px">
             <div className="page-hero__breadcrumb">
               <Link href="/">Home</Link> <span>/</span>
-              <span style={{ color: "#CBD5E1" }}>FAQ</span>
+              <span style={{ color: "#D1D5DB" }}>FAQ</span>
             </div>
           </Reveal>
           <Reveal type="up" delay={50} duration={0.35} rootMargin="0px 0px 60px 0px">
@@ -54,7 +54,7 @@ export default function FAQPage() {
           <Reveal type="right" delay={100} duration={0.35} rootMargin="0px 0px 60px 0px">
             <p
               style={{
-                color: "#CBD5E1",
+                color: "#D1D5DB",
                 fontSize: "1.05rem",
                 lineHeight: 1.7,
                 maxWidth: "560px",
@@ -75,7 +75,7 @@ export default function FAQPage() {
                 style={{
                   marginBottom: "48px",
                   paddingBottom: "48px",
-                  borderBottom: "1px solid #E5E9EF",
+                  borderBottom: "1px solid #2A2A2A",
                 }}
               >
                 <div className="faq-category-header"

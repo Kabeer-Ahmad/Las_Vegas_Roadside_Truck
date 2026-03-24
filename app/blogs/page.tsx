@@ -23,7 +23,7 @@ export default function BlogsPage() {
           <Reveal type="left">
             <div className="page-hero__breadcrumb">
               <Link href="/">Home</Link> <span>/</span>
-              <span style={{ color: "#CBD5E1" }}>Blogs</span>
+              <span style={{ color: "#D1D5DB" }}>Blogs</span>
             </div>
           </Reveal>
           <Reveal type="up" delay={100}>
@@ -34,7 +34,7 @@ export default function BlogsPage() {
           <Reveal type="right" delay={200}>
             <p
               style={{
-                color: "#CBD5E1",
+                color: "#D1D5DB",
                 fontSize: "1.05rem",
                 lineHeight: 1.7,
                 maxWidth: "560px",
@@ -72,10 +72,10 @@ export default function BlogsPage() {
                   <article
                     className="blog-card tilt-card"
                     style={{
-                      background: "#fff",
+                      background: "#0a0a0a",
                       borderRadius: "20px",
                       overflow: "hidden",
-                      border: "1px solid #E5E9EF",
+                      border: "1px solid #2A2A2A",
                       boxShadow: "0 4px 20px rgba(0,0,0,0.06)",
                       transition: "transform 0.3s ease, box-shadow 0.3s ease",
                       height: "100%",
@@ -88,7 +88,7 @@ export default function BlogsPage() {
                         position: "relative",
                         width: "100%",
                         aspectRatio: "16/10",
-                        background: "#F1F5F9",
+                        background: "#0a0a0a",
                       }}
                     >
                       <Image
@@ -164,7 +164,7 @@ export default function BlogsPage() {
                       <p
                         style={{
                           fontSize: "0.95rem",
-                          color: "#6B7280",
+                          color: "#D1D5DB",
                           lineHeight: 1.65,
                           marginBottom: "20px",
                           flex: 1,

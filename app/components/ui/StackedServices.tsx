@@ -130,9 +130,9 @@ export default function StackedServices({ services }: { services: Service[] }) {
       ref={sectionRef}
       className="stacked-services-section"
       style={{
-        background: "#F8F9FB",
-        borderTop: "1px solid #E5E9EF",
-        borderBottom: "1px solid #E5E9EF",
+        background: "#0a0a0a",
+        borderTop: "1px solid #2A2A2A",
+        borderBottom: "1px solid #2A2A2A",
         padding: "80px 0",
       }}
     >
@@ -164,7 +164,7 @@ export default function StackedServices({ services }: { services: Service[] }) {
               key={s.href}
               style={{
                 ...getCardStyle(i),
-                background: "#fff",
+                background: "#0a0a0a",
                 border: "1px solid #E8ECF1",
                 borderRadius: "20px",
                 overflow: "hidden",
@@ -197,7 +197,7 @@ export default function StackedServices({ services }: { services: Service[] }) {
                   <h3 style={{ marginBottom: "8px", fontSize: "1.15rem", color: "#111827" }}>
                     {s.title}
                   </h3>
-                  <p style={{ fontSize: "0.875rem", margin: "0", lineHeight: 1.5, color: "#6B7280" }}>
+                  <p style={{ fontSize: "0.875rem", margin: "0", lineHeight: 1.5, color: "#D1D5DB" }}>
                     {s.desc}
                   </p>
                 </div>
@@ -252,9 +252,9 @@ export default function StackedServices({ services }: { services: Service[] }) {
                 <div style={{ fontSize: "1.5rem", fontWeight: 800, color: "#c4a82f", marginBottom: "4px" }}>24/7</div>
                 <div style={{ fontSize: "0.85rem", color: "#eccb4a", fontWeight: 600 }}>Emergency Dispatch</div>
               </div>
-              <div style={{ padding: "16px 24px", background: "#fff", borderRadius: "12px", border: "1px solid #E5E9EF", boxShadow: "0 4px 12px rgba(0,0,0,0.02)", flex: "1 1 auto", minWidth: "150px" }}>
-                <div style={{ fontSize: "1.5rem", fontWeight: 800, color: "#111827", marginBottom: "4px" }}>12+</div>
-                <div style={{ fontSize: "0.85rem", color: "#6B7280", fontWeight: 600 }}>Specialized Services</div>
+              <div style={{ padding: "16px 24px", background: "#0a0a0a", borderRadius: "12px", border: "1px solid #2A2A2A", boxShadow: "0 4px 12px rgba(0,0,0,0.02)", flex: "1 1 auto", minWidth: "150px" }}>
+                <div style={{ fontSize: "1.5rem", fontWeight: 800, color: "#e4c13c", marginBottom: "4px" }}>12+</div>
+                <div style={{ fontSize: "0.85rem", color: "#D1D5DB", fontWeight: 600 }}>Specialized Services</div>
               </div>
             </div>
           </Reveal>

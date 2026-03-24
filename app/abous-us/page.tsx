@@ -157,8 +157,8 @@ export default function AboutPage() {
           {/* breadcrumb */}
           <div className="anim-fadeIn" style={{ display: "flex", gap: "8px", alignItems: "center", marginBottom: "24px", fontSize: "0.8rem" }}>
             <Link href="/" style={{ color: "#f5e6a8", textDecoration: "none" }}>Home</Link>
-            <span style={{ color: "#475569" }}>/</span>
-            <span style={{ color: "#CBD5E1" }}>About Us</span>
+            <span style={{ color: "#D1D5DB" }}>/</span>
+            <span style={{ color: "#D1D5DB" }}>About Us</span>
           </div>
 
           <div style={{ maxWidth: "680px" }}>
@@ -184,7 +184,7 @@ export default function AboutPage() {
               <a href="tel:+17028632706" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#e4c13c", color: "#111827", padding: "13px 28px", borderRadius: "10px", fontWeight: 700, textDecoration: "none", boxShadow: "0 4px 24px rgba(228, 193, 60,0.5)" }}>
                 <Phone size={17} /> Call Us Now
               </a>
-              <Link href="/services" style={{ display: "inline-flex", alignItems: "center", gap: "8px", color: "#E2E8F0", padding: "12px 24px", borderRadius: "10px", fontWeight: 600, border: "1.5px solid rgba(255,255,255,0.25)", textDecoration: "none", background: "rgba(255,255,255,0.07)", backdropFilter: "blur(6px)" }}>
+              <Link href="/services" style={{ display: "inline-flex", alignItems: "center", gap: "8px", color: "#E5E7EB", padding: "12px 24px", borderRadius: "10px", fontWeight: 600, border: "1.5px solid rgba(255,255,255,0.25)", textDecoration: "none", background: "rgba(255,255,255,0.07)", backdropFilter: "blur(6px)" }}>
                 Our Services <ArrowUpRight size={16} />
               </Link>
             </div>
@@ -195,7 +195,7 @@ export default function AboutPage() {
             {[["10+", "Years in Business"], ["100+", "5-Star Reviews"], ["24/7", "Emergency Service"]].map(([n, l]) => (
               <div key={l} style={{ background: "rgba(255,255,255,0.06)", backdropFilter: "blur(8px)", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "12px", padding: "10px 18px" }}>
                 <span style={{ color: "#f0d56a", fontWeight: 800, fontSize: "1.1rem" }}>{n}</span>
-                <span style={{ color: "#94A3B8", fontSize: "0.75rem", marginLeft: "6px" }}>{l}</span>
+                <span style={{ color: "#9CA3AF", fontSize: "0.75rem", marginLeft: "6px" }}>{l}</span>
               </div>
             ))}
           </div>
@@ -210,17 +210,17 @@ export default function AboutPage() {
             <Reveal dir="left">
               <span className="eyebrow">Who We Are</span>
               <h2 style={{ marginBottom: "20px" }}>A Little Care for Your Great Problems</h2>
-              <p style={{ fontSize: "1.05rem", color: "#374151", lineHeight: 1.85, marginBottom: "20px" }}>
+              <p style={{ fontSize: "1.05rem", color: "#F3F4F6", lineHeight: 1.85, marginBottom: "20px" }}>
                 At Las Vegas 24 Hour Roadside Truck Services, we believe every mile matters. Since 2013, we&apos;ve been the trusted choice for drivers and fleets in Las Vegas and Southern Nevada.
               </p>
-              <p style={{ color: "#6B7280", lineHeight: 1.8, marginBottom: "28px" }}>
+              <p style={{ color: "#D1D5DB", lineHeight: 1.8, marginBottom: "28px" }}>
                 Our mission is simple: keep you moving with confidence. Every repair is done with precision, transparency, and a commitment to reducing downtime.
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginBottom: "32px" }}>
                 {["Founded in 2013 with a focus on honesty", "Serving all of Las Vegas 24/7", "Specializing in Cummins, Detroit & Paccar", "DOT-compliant inspections and repairs", "Fully mobile roadside service available"].map((item, i) => (
                   <div key={item} className={`anim-fadeUp delay-${i + 1}`} style={{ display: "flex", alignItems: "center", gap: "10px" }}>
                     <CheckCircle size={17} color="#e4c13c" strokeWidth={2.5} />
-                    <span style={{ fontSize: "0.92rem", color: "#374151" }}>{item}</span>
+                    <span style={{ fontSize: "0.92rem", color: "#F3F4F6" }}>{item}</span>
                   </div>
                 ))}
               </div>
@@ -250,22 +250,22 @@ export default function AboutPage() {
       </section>
 
       {/* ══════════ BRAND MARQUEE ══════════ */}
-      <section style={{ background: "#fff", borderTop: "1px solid #E5EDFF", borderBottom: "1px solid #E5EDFF", padding: "32px 0", overflow: "hidden" }}>
+      <section style={{ background: "#0a0a0a", borderTop: "1px solid #2A2A2A", borderBottom: "1px solid #2A2A2A", padding: "32px 0", overflow: "hidden" }}>
         <Reveal dir="fade">
-          <p style={{ textAlign: "center", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#94A3B8", marginBottom: "24px" }}>
+          <p style={{ textAlign: "center", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#9CA3AF", marginBottom: "24px" }}>
             All Brands We Service
           </p>
         </Reveal>
         <div style={{ overflow: "hidden", position: "relative" }}>
-          <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: "100px", background: "linear-gradient(to right, #fff, transparent)", zIndex: 2, pointerEvents: "none" }} />
-          <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: "100px", background: "linear-gradient(to left, #fff, transparent)", zIndex: 2, pointerEvents: "none" }} />
+          <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: "100px", background: "linear-gradient(to right, #000, transparent)", zIndex: 2, pointerEvents: "none" }} />
+          <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: "100px", background: "linear-gradient(to left, #000, transparent)", zIndex: 2, pointerEvents: "none" }} />
           <div style={{ display: "flex", alignItems: "center", animation: "marqueeScroll 50s linear infinite", width: "max-content" }}>
             {marqueeItems.map((brand, i) => (
               <div key={i} style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", gap: "7px", margin: "0 28px", flexShrink: 0 }}>
-                <div style={{ width: "120px", height: "60px", borderRadius: "14px", background: "#F8FAFF", border: "1.5px solid #E5EDFF", display: "flex", alignItems: "center", justifyContent: "center", padding: "10px 14px", transition: "box-shadow 0.3s, border-color 0.3s" }}>
+                <div style={{ width: "120px", height: "60px", borderRadius: "14px", background: "#0f0f0f", border: "1.5px solid #2A2A2A", display: "flex", alignItems: "center", justifyContent: "center", padding: "10px 14px", transition: "box-shadow 0.3s, border-color 0.3s" }}>
                   <Image src={brand.src} alt={brand.name} width={88} height={38} style={{ objectFit: "contain", maxWidth: "88px", maxHeight: "38px" }} />
                 </div>
-                <span style={{ fontSize: "0.65rem", fontWeight: 600, color: "#94A3B8", letterSpacing: "0.04em", whiteSpace: "nowrap" }}>{brand.name}</span>
+                <span style={{ fontSize: "0.65rem", fontWeight: 600, color: "#9CA3AF", letterSpacing: "0.04em", whiteSpace: "nowrap" }}>{brand.name}</span>
               </div>
             ))}
           </div>
@@ -280,10 +280,10 @@ export default function AboutPage() {
             <Reveal dir="left">
               <span className="eyebrow">What We Stand For</span>
               <h2 style={{ marginBottom: "20px" }}>Why Drivers Choose Us</h2>
-              <p style={{ color: "#374151", lineHeight: 1.85, fontSize: "1.02rem", marginBottom: "24px" }}>
+              <p style={{ color: "#F3F4F6", lineHeight: 1.85, fontSize: "1.02rem", marginBottom: "24px" }}>
                 At Las Vegas 24 Hour Roadside Truck Services, your journey is our priority. Whether it&apos;s preventive maintenance or an emergency breakdown, we&apos;re here to get you back on the road faster and safer.
               </p>
-              <p style={{ color: "#6B7280", lineHeight: 1.8, marginBottom: "32px" }}>
+              <p style={{ color: "#D1D5DB", lineHeight: 1.8, marginBottom: "32px" }}>
                 Every repair is done with precision, transparency, and a commitment to reducing downtime. We treat every truck like it&apos;s our own because we know your business depends on it.
               </p>
               <div style={{ background: "#fffbf0", borderRadius: "16px", padding: "24px", border: "1px solid #fce9a8" }}>
@@ -295,12 +295,12 @@ export default function AboutPage() {
 
             <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
               <Reveal dir="right" delay={0}>
-                <div style={{ background: "#fff", border: "1px solid #E5E9EF", borderRadius: "18px", padding: "32px" }}>
+                <div style={{ background: "#0a0a0a", border: "1px solid #2A2A2A", borderRadius: "18px", padding: "32px" }}>
                   <div style={{ width: "52px", height: "52px", background: "#fffbf0", borderRadius: "13px", display: "flex", alignItems: "center", justifyContent: "center", color: "#e4c13c", marginBottom: "16px" }}>
                     <Award size={26} />
                   </div>
                   <h3 style={{ marginBottom: "10px", fontSize: "1.1rem" }}>Vision</h3>
-                  <p style={{ color: "#6B7280", lineHeight: 1.75, margin: 0, fontSize: "0.935rem" }}>
+                  <p style={{ color: "#D1D5DB", lineHeight: 1.75, margin: 0, fontSize: "0.935rem" }}>
                     To be the most trusted truck and trailer repair partner in Las Vegas, known for reliability, expertise, and customer-first service.
                   </p>
                 </div>
@@ -323,7 +323,7 @@ export default function AboutPage() {
       </section>
 
       {/* ══════════ DARK PROMISE BANNER ══════════ */}
-      <section style={{ background: "#0F172A", padding: "80px 0", overflow: "hidden", position: "relative" }}>
+      <section style={{ background: "#0a0a0a", padding: "80px 0", overflow: "hidden", position: "relative" }}>
         {/* subtle animated gradient orb */}
         <div style={{ position: "absolute", top: "-80px", left: "-80px", width: "400px", height: "400px", background: "radial-gradient(circle, rgba(228, 193, 60,0.18) 0%, transparent 70%)", pointerEvents: "none" }} />
         <div style={{ position: "absolute", bottom: "-80px", right: "-80px", width: "360px", height: "360px", background: "radial-gradient(circle, rgba(228, 193, 60,0.14) 0%, transparent 70%)", pointerEvents: "none" }} />
@@ -333,7 +333,7 @@ export default function AboutPage() {
             <h2 style={{ color: "#fff", marginBottom: "18px", fontSize: "clamp(1.5rem,3vw,2.2rem)" }}>
               Every mile matters, and we make sure you don&apos;t miss one.
             </h2>
-            <p style={{ color: "#94A3B8", lineHeight: 1.85, marginBottom: "28px", fontSize: "0.975rem" }}>
+            <p style={{ color: "#9CA3AF", lineHeight: 1.85, marginBottom: "28px", fontSize: "0.975rem" }}>
               At Las Vegas 24 Hour Roadside Truck Services, it&apos;s not just about fixing trucks - it&apos;s about keeping your journey moving. We know that trust is earned on the road, which is why we treat every truck like our responsibility.
             </p>
             <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
@@ -351,7 +351,7 @@ export default function AboutPage() {
                 <Phone size={28} color="#f0d56a" />
               </div>
               <h3 style={{ color: "#fff", marginBottom: "10px" }}>Need Help Right Now?</h3>
-              <p style={{ color: "#94A3B8", marginBottom: "24px", fontSize: "0.88rem" }}>24/7 emergency roadside service across Las Vegas.</p>
+              <p style={{ color: "#9CA3AF", marginBottom: "24px", fontSize: "0.88rem" }}>24/7 emergency roadside service across Las Vegas.</p>
               <a href="tel:+17028632706" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#e4c13c", color: "#111827", padding: "14px 30px", borderRadius: "12px", fontWeight: 700, textDecoration: "none", fontSize: "1rem", boxShadow: "0 4px 24px rgba(228, 193, 60,0.55)" }}>
                 <Phone size={17} /> (702) 863-2706
               </a>
@@ -376,7 +376,7 @@ export default function AboutPage() {
                 <div className="card" style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", gap: "14px", padding: "36px 24px", height: "100%" }}>
                   <div style={{ width: "64px", height: "64px", background: "linear-gradient(135deg,#fffbf0,#fce9a8)", borderRadius: "18px", display: "flex", alignItems: "center", justifyContent: "center", color: "#e4c13c" }}>{p.icon}</div>
                   <h4 style={{ fontSize: "0.98rem", marginBottom: 0 }}>{p.title}</h4>
-                  <p style={{ fontSize: "0.87rem", margin: 0, color: "#6B7280" }}>{p.desc}</p>
+                  <p style={{ fontSize: "0.87rem", margin: 0, color: "#D1D5DB" }}>{p.desc}</p>
                 </div>
               </Reveal>
             ))}
@@ -393,7 +393,7 @@ export default function AboutPage() {
               <h2>EXCELLENT</h2>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", marginTop: "8px", marginBottom: "6px" }}>
                 {[...Array(5)].map((_, i) => <Star key={i} size={20} color="#F59E0B" fill="#F59E0B" />)}
-                <span style={{ fontWeight: 700, fontSize: "1rem", color: "#374151", marginLeft: "6px" }}>Based on 100+ reviews</span>
+                <span style={{ fontWeight: 700, fontSize: "1rem", color: "#F3F4F6", marginLeft: "6px" }}>Based on 100+ reviews</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", marginTop: "4px" }}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
@@ -402,7 +402,7 @@ export default function AboutPage() {
                   <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
                   <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
                 </svg>
-                <span style={{ fontSize: "0.82rem", color: "#64748B", fontWeight: 600 }}>Google Reviews</span>
+                <span style={{ fontSize: "0.82rem", color: "#D1D5DB", fontWeight: 600 }}>Google Reviews</span>
               </div>
             </div>
           </Reveal>
@@ -410,21 +410,21 @@ export default function AboutPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "20px" }} className="testimonials-grid">
             {reviews.map((r, i) => (
               <Reveal key={i} dir="up" delay={Math.min(i * 0.08, 0.48)}>
-                <div style={{ background: "#fff", border: "1px solid #E5E9EF", borderRadius: "16px", padding: "28px 24px", display: "flex", flexDirection: "column", gap: "14px", boxShadow: "0 2px 16px rgba(228, 193, 60,0.06)", height: "100%" }}>
+                <div style={{ background: "#0a0a0a", border: "1px solid #2A2A2A", borderRadius: "16px", padding: "28px 24px", display: "flex", flexDirection: "column", gap: "14px", boxShadow: "0 2px 16px rgba(228, 193, 60,0.06)", height: "100%" }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
                     <div style={{ display: "flex", gap: "2px" }}>
                       {[...Array(5)].map((_, si) => <Star key={si} size={14} color="#F59E0B" fill="#F59E0B" />)}
                     </div>
                     <Quote size={18} color="#fce9a8" />
                   </div>
-                  <p style={{ color: "#374151", lineHeight: 1.72, fontSize: "0.875rem", margin: 0, flex: 1 }}>{r.text}</p>
-                  <div style={{ display: "flex", alignItems: "center", gap: "10px", paddingTop: "10px", borderTop: "1px solid #F1F5F9" }}>
+                  <p style={{ color: "#F3F4F6", lineHeight: 1.72, fontSize: "0.875rem", margin: 0, flex: 1 }}>{r.text}</p>
+                  <div style={{ display: "flex", alignItems: "center", gap: "10px", paddingTop: "10px", borderTop: "1px solid #2A2A2A" }}>
                     <div style={{ width: "38px", height: "38px", borderRadius: "50%", background: "linear-gradient(135deg,#fffbf0,#fce9a8)", display: "flex", alignItems: "center", justifyContent: "center", color: "#c4a82f", fontWeight: 800, fontSize: "0.95rem", flexShrink: 0 }}>
                       {r.name[0]}
                     </div>
                     <div>
-                      <div style={{ fontWeight: 700, fontSize: "0.85rem", color: "#1E293B" }}>{r.name}</div>
-                      <div style={{ fontSize: "0.74rem", color: "#94A3B8" }}>{r.time}</div>
+                      <div style={{ fontWeight: 700, fontSize: "0.85rem", color: "#111827" }}>{r.name}</div>
+                      <div style={{ fontSize: "0.74rem", color: "#9CA3AF" }}>{r.time}</div>
                     </div>
                   </div>
                 </div>
@@ -435,7 +435,7 @@ export default function AboutPage() {
           <Reveal dir="up" delay={0.2}>
             <div style={{ textAlign: "center", marginTop: "36px" }}>
               <a href="https://www.google.com/search?q=Las+Vegas+24+Hour+Roadside+Truck+Services+reviews" target="_blank" rel="noopener noreferrer"
-                style={{ display: "inline-flex", alignItems: "center", gap: "8px", border: "1.5px solid #E5E9EF", color: "#374151", padding: "11px 22px", borderRadius: "10px", fontWeight: 600, fontSize: "0.9rem", textDecoration: "none" }}>
+                style={{ display: "inline-flex", alignItems: "center", gap: "8px", border: "1.5px solid #3A3A3A", color: "#F3F4F6", padding: "11px 22px", borderRadius: "10px", fontWeight: 600, fontSize: "0.9rem", textDecoration: "none" }}>
                 <ThumbsUp size={16} color="#e4c13c" /> Read All 100+ Reviews on Google
               </a>
             </div>
@@ -454,7 +454,7 @@ export default function AboutPage() {
               <h2 style={{ color: "#fff", marginBottom: "12px", fontSize: "clamp(1.5rem,3vw,2.2rem)" }}>
                 We Come to You - Anywhere in Las Vegas
               </h2>
-              <p style={{ color: "#CBD5E1", lineHeight: 1.75, margin: 0, fontSize: "0.95rem" }}>
+              <p style={{ color: "#D1D5DB", lineHeight: 1.75, margin: 0, fontSize: "0.95rem" }}>
                 Broken down on I-15 or US-93? Our mobile technicians dispatch fast to get you back on the road.
               </p>
             </div>
@@ -471,7 +471,7 @@ export default function AboutPage() {
             <p style={{ color: "rgba(17,24,39,0.85)", marginBottom: "28px", fontSize: "1rem" }}>
               Please call us immediately - we&apos;re available 24/7 across Las Vegas.
             </p>
-            <a href="tel:+17028632706" style={{ display: "inline-flex", alignItems: "center", gap: "10px", background: "#fff", color: "#111827", padding: "16px 38px", borderRadius: "12px", fontWeight: 800, fontSize: "1.2rem", textDecoration: "none", boxShadow: "0 6px 30px rgba(0,0,0,0.2)" }}>
+            <a href="tel:+17028632706" style={{ display: "inline-flex", alignItems: "center", gap: "10px", background: "#0a0a0a", color: "#f9fafb", padding: "16px 38px", borderRadius: "12px", fontWeight: 800, fontSize: "1.2rem", textDecoration: "none", boxShadow: "0 6px 30px rgba(0,0,0,0.2)" }}>
               <Phone size={22} /> 702-863-2706
             </a>
             <div style={{ display: "flex", justifyContent: "center", gap: "28px", marginTop: "20px", flexWrap: "wrap" }}>

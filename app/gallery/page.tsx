@@ -13,7 +13,7 @@ export default function GalleryPage() {
           <Reveal type="left">
             <div className="page-hero__breadcrumb">
               <Link href="/">Home</Link> <span>/</span>
-              <span style={{ color: "#CBD5E1" }}>Gallery</span>
+              <span style={{ color: "#D1D5DB" }}>Gallery</span>
             </div>
           </Reveal>
           <Reveal type="up" delay={100}>
@@ -24,7 +24,7 @@ export default function GalleryPage() {
           <Reveal type="right" delay={200}>
             <p
               style={{
-                color: "#CBD5E1",
+                color: "#D1D5DB",
                 fontSize: "1.05rem",
                 lineHeight: 1.7,
                 maxWidth: "560px",
@@ -58,8 +58,8 @@ export default function GalleryPage() {
                     aspectRatio: "4/3",
                     borderRadius: "16px",
                     overflow: "hidden",
-                    background: "#F1F4F8",
-                    border: "1px solid #E5E9EF",
+                    background: "#0a0a0a",
+                    border: "1px solid #2A2A2A",
                   }}
                 >
                   <Image
