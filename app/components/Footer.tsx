@@ -35,7 +35,7 @@ export default function Footer() {
           <div className="footer-brand-block">
             <Link href="/" style={{ display: "inline-flex", alignItems: "center", marginBottom: "16px", textDecoration: "none" }}>
               <Image
-                src="/Logo.png"
+                src="/logo_1.png"
                 alt="Las Vegas 24 Hour Roadside Truck Services"
                 width={300}
                 height={84}

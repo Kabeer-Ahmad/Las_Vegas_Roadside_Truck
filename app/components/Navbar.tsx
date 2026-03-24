@@ -39,7 +39,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="nav-logo">
             <Image
-              src="/Logo.png"
+              src="/logo_1.png"
               alt="Las Vegas 24 Hour Roadside Truck Services"
               width={200}
               height={64}

@@ -1970,7 +1970,13 @@ img {
     position: relative;
     z-index: 50;
     transform: translate3d(0, 0, 1px);
-    background: linear-gradient(to bottom, #F8F9FB 85%, rgba(248,249,251,0));
+    /* Match dark section — avoid light “white strip” on mobile */
+    background: linear-gradient(
+      to bottom,
+      #0a0a0a 70%,
+      rgba(10, 10, 10, 0.92) 88%,
+      rgba(10, 10, 10, 0)
+    );
     padding-bottom: 24px;
     padding-top: 0;
   }

@@ -165,7 +165,7 @@ export default function StackedServices({ services }: { services: Service[] }) {
               style={{
                 ...getCardStyle(i),
                 background: "#0a0a0a",
-                border: "1px solid #E8ECF1",
+                border: "1px solid #2A2A2A",
                 borderRadius: "20px",
                 overflow: "hidden",
               }}
@@ -194,7 +194,7 @@ export default function StackedServices({ services }: { services: Service[] }) {
                     padding: "24px 28px",
                   }}
                 >
-                  <h3 style={{ marginBottom: "8px", fontSize: "1.15rem", color: "#111827" }}>
+                  <h3 style={{ marginBottom: "8px", fontSize: "1.15rem", color: "#F3F4F6" }}>
                     {s.title}
                   </h3>
                   <p style={{ fontSize: "0.875rem", margin: "0", lineHeight: 1.5, color: "#D1D5DB" }}>
