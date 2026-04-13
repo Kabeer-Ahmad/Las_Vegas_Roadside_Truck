@@ -33,6 +33,32 @@ export default function StackedServices({ services }: { services: Service[] }) {
     return () => mq.removeEventListener("change", update);
   }, []);
 
+  /** Recalc pin distance after images/layout — avoids last card clipped on some laptops */
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const refresh = () => {
+      requestAnimationFrame(() => ScrollTrigger.refresh());
+    };
+    const onResize = () => refresh();
+    window.addEventListener("resize", onResize);
+    window.addEventListener("orientationchange", onResize);
+    const ro = new ResizeObserver(refresh);
+    const attachRo = requestAnimationFrame(() => {
+      const nodes = [trackRef.current, viewportRef.current].filter((el): el is HTMLDivElement => el != null);
+      nodes.forEach((el) => ro.observe(el));
+    });
+    const t1 = window.setTimeout(refresh, 350);
+    const t2 = window.setTimeout(refresh, 900);
+    return () => {
+      cancelAnimationFrame(attachRo);
+      window.removeEventListener("resize", onResize);
+      window.removeEventListener("orientationchange", onResize);
+      ro.disconnect();
+      window.clearTimeout(t1);
+      window.clearTimeout(t2);
+    };
+  }, [services.length]);
+
   useGSAP(
     () => {
       const section = sectionRef.current;
@@ -45,22 +71,30 @@ export default function StackedServices({ services }: { services: Service[] }) {
       mm.add("(min-width: 993px)", () => {
         gsap.set(track, { x: 0 });
 
+        const scrollDistance = () => {
+          const vw = viewport.clientWidth;
+          const tw = track.scrollWidth;
+          const overflow = Math.max(0, Math.ceil(tw) - Math.floor(vw));
+          // Extra distance so scrub smoothing finishes before unpin; covers late image layout
+          const settlePad = Math.max(960, Math.round(overflow * 0.45));
+          return Math.max(1200, overflow + settlePad);
+        };
+
         const st = ScrollTrigger.create({
           trigger: section,
           start: "top top",
-          end: () => {
-            const overflow = track.scrollWidth - viewport.clientWidth;
-            return `+=${Math.max(560, overflow + 520)}`;
-          },
+          end: () => `+=${scrollDistance()}`,
           pin: true,
-          scrub: 1.15,
+          scrub: 0.45,
           anticipatePin: 1,
           invalidateOnRefresh: true,
           animation: gsap.to(track, {
-            x: () => Math.min(0, viewport.clientWidth - track.scrollWidth),
+            x: () => Math.min(0, Math.floor(viewport.clientWidth) - Math.ceil(track.scrollWidth)),
             ease: "none",
           }),
         });
+
+        requestAnimationFrame(() => ScrollTrigger.refresh());
 
         return () => {
           st.kill();
@@ -240,6 +274,9 @@ export default function StackedServices({ services }: { services: Service[] }) {
                         fill
                         style={{ objectFit: "cover", objectPosition: "center" }}
                         sizes="(max-width: 720px) 100vw, 200px"
+                        onLoadingComplete={() => {
+                          requestAnimationFrame(() => ScrollTrigger.refresh());
+                        }}
                       />
                     </div>
                   )}

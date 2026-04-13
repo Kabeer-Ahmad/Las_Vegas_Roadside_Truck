@@ -2,19 +2,29 @@
 
 import Image from "next/image";
 
-const brands = [
-  "ford",
-  "chevrolet",
-  "caterpillar",
-  "honda",
-  "toyota",
-  "volvo",
-  "scania",
-  "man",
-  "johndeer",
+/** Every asset in `public/brands/` — add an entry when you drop in a new file. */
+const brands: { src: string; alt: string }[] = [
+  { src: "/brands/caterpillar.svg", alt: "Caterpillar" },
+  { src: "/brands/chevrolet.svg", alt: "Chevrolet" },
+  { src: "/brands/cummings.png", alt: "Cummins" },
+  { src: "/brands/Detroit_Diesel-Logo.wine.png", alt: "Detroit" },
+  { src: "/brands/Freightliner.png", alt: "Freightliner" },
+  { src: "/brands/ford.svg", alt: "Ford" },
+  { src: "/brands/honda.svg", alt: "Honda" },
+  { src: "/brands/international.png", alt: "International Trucks" },
+  { src: "/brands/isuzu.webp", alt: "Isuzu" },
+  { src: "/brands/johndeer.svg", alt: "John Deere" },
+  { src: "/brands/mack.png", alt: "Mack Trucks" },
+  { src: "/brands/man.svg", alt: "MAN" },
+  { src: "/brands/peterbilt.png", alt: "Peterbilt" },
+  { src: "/brands/scania.svg", alt: "Scania" },
+  { src: "/brands/toyota.svg", alt: "Toyota" },
+  { src: "/brands/volvo.svg", alt: "Volvo" },
 ];
 
 export default function BrandsSlider() {
+  const loop = [...brands, ...brands, ...brands, ...brands];
+
   return (
     <section
       style={{
@@ -41,11 +51,11 @@ export default function BrandsSlider() {
       </div>
       <div className="brands-slider-wrap">
         <div className="brands-slider-track">
-          {[...brands, ...brands, ...brands, ...brands].map((slug, i) => (
-            <div key={i} className="brands-slider-item">
+          {loop.map((brand, i) => (
+            <div key={`${brand.src}-${i}`} className="brands-slider-item">
               <Image
-                src={`/brands/${slug}.svg`}
-                alt={slug}
+                src={brand.src}
+                alt={brand.alt}
                 width={180}
                 height={96}
                 style={{ objectFit: "contain" }}
